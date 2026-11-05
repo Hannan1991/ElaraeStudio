@@ -192,3 +192,26 @@ footer small{grid-column:1/-1;text-align:center}
  .marquee-track i.footer-star{font-size:9px}
  footer small{grid-column:1;margin-top:10px}
 }
+
+/* Approved refinements: centered wordmark, horizontally ruled continuous value ticker. */
+.intro-signature{display:flex;flex-direction:column;align-items:stretch;justify-self:center;gap:14px;width:100%;max-width:520px}
+.intro-logo{align-self:center;width:min(250px,72%);max-height:160px;object-fit:contain}
+.intro-ticker{width:100%;overflow:hidden;border-top:1px solid var(--line);padding-top:14px}
+.intro-ticker-track{display:flex;width:max-content;animation:intro-ticker-left 27s linear infinite}
+.intro-ticker-set{display:flex;flex:0 0 auto;align-items:center;gap:clamp(28px,4vw,52px);padding-right:clamp(28px,4vw,52px)}
+.ticker-item{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;text-transform:uppercase;font-size:10px;letter-spacing:.14em;color:#756a60}
+.ticker-item i{font-style:normal;font-size:13px;line-height:1;color:var(--taupe)}
+@keyframes intro-ticker-left{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.intro-ticker-track{animation:none}}
+.project-story .text-link{width:max-content;max-width:100%;margin-top:11px;padding:5px 0 7px;gap:12px;font-size:8px;letter-spacing:.12em}
+.email-cta{gap:6px;margin-top:5px;padding:4px 0;font-family:'DM Sans',sans-serif;font-size:11px;line-height:1.4}
+.email-icon{font-size:12px}
+.email-cta span:last-child{font-size:10px;margin-left:1px}
+.sofia-image{width:100%;height:auto;aspect-ratio:auto;overflow:visible;border-radius:0;background:transparent}
+.sofia-image img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;transform:none;border-radius:0;mix-blend-mode:normal}
+.sofia-badge{right:7%;bottom:5%;z-index:1;padding:7px 13px;border-color:#b9a997;background:#fbf9f5d9;font-size:10px;letter-spacing:.15em;box-shadow:0 3px 12px #302a2612}
+footer{position:relative}
+footer .footer-copyright{grid-column:1/-1;text-align:center;border-top:1px solid #ffffff30;margin-top:30px;padding-top:18px;font-size:8px;color:#c4b9ae}
+footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0;border:0;font-size:8px;color:#c4b9ae}
+@media(max-width:900px){.intro-signature{max-width:440px}.intro-logo{width:min(230px,72%)}}
+@media(max-width:650px){.intro-signature{max-width:440px;gap:12px}.intro-logo{width:min(205px,70%);max-height:125px}.intro-ticker{padding-top:12px}.intro-ticker-set{gap:26px;padding-right:26px}.ticker-item{gap:7px;font-size:9px}.ticker-item i{font-size:12px}.project-story .text-link{margin-top:9px;font-size:8px}.email-cta{margin-top:5px;padding:3px 0;font-size:10px}.email-icon{font-size:11px}.sofia-image{width:86%;height:auto;margin:0 auto}.sofia-badge{right:7%;bottom:5%;padding:6px 11px;font-size:9px}footer .footer-copyright{margin-top:12px;padding-top:13px}footer .footer-rights{position:static;grid-column:1;margin-top:-8px;text-align:center}}
