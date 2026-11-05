@@ -117,3 +117,9 @@ footer{overflow:hidden;grid-template-columns:auto minmax(0,1fr);column-gap:5vw;r
 .privacy-page .privacy-back{display:inline-flex;margin-top:35px}
 .privacy-page footer{margin-top:auto}
 @media(max-width:650px){.privacy-page main{padding:60px 6vw 75px}.privacy-page h1{font-size:48px}.privacy-page h2{font-size:23px}.footer-privacy{font-size:8px}}
+
+/* The approved secondary wordmark balances the studio introduction on desktop. */
+.intro-signature{max-width:340px;gap:22px}
+.intro-logo{width:min(250px,100%);max-height:160px}
+@media(max-width:900px){.intro-signature{max-width:300px}.intro-logo{width:min(225px,100%);max-height:145px}}
+@media(max-width:650px){.intro-signature{max-width:320px;gap:16px}.intro-logo{width:175px;max-height:105px}}
