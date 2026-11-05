@@ -79,3 +79,41 @@ footer{overflow:hidden;grid-template-columns:auto minmax(0,1fr);column-gap:5vw;r
 @keyframes signature-marquee{to{transform:translateX(-50%)}}
 @media(max-width:650px){footer{grid-template-columns:1fr;row-gap:14px}.footer-marquee{grid-column:1/-1;grid-row:auto;border-left:0;border-top:1px solid #ffffff35;padding:14px 0 0}.marquee-track span{font-size:9px;padding-right:7vw}.marquee-track i{padding:0 14px}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;transform:none}.footer-marquee{overflow:auto}.marquee-track span[aria-hidden=true]{display:none}}
+
+/* Keep the studio and footer icons the same nude taupe on every screen. */
+.intro .pillar-icon,.marquee-track i.footer-star{color:var(--taupe)}
+.intro .pillar-icon svg,.marquee-track i.footer-star svg{display:block;width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.marquee-track i.footer-star{font-size:1em;padding:0 22px;vertical-align:middle}
+.person-icon svg{width:27px;height:27px}
+@media(max-width:650px){.intro .pillar-icon,.marquee-track i.footer-star{color:var(--taupe)}.person-icon svg{width:21px;height:21px}.marquee-track i.footer-star{padding:0 14px}}
+
+/* Latest visual alignment: balanced studio columns and even map/banner corners. */
+.intro-content{transform:translateY(22px)}
+.contact-location{border-radius:32px}
+.map-frame{border-radius:22px}
+@media(max-width:900px){.intro-content{transform:translateY(14px)}}
+@media(max-width:650px){.intro-content{transform:none}.contact-location{border-radius:24px}.map-frame{border-radius:18px}}
+
+/* Center the footer marquee and tighten the repeated line spacing. */
+.footer-marquee{display:flex;align-items:center;justify-content:center;text-align:center;border-left:0;padding-left:0}
+.marquee-track span{padding-right:24px;text-align:center}
+.marquee-track i.footer-star{padding:0 12px}
+@media(max-width:650px){.footer-marquee{justify-content:center;text-align:center;padding-left:0}.marquee-track span{padding-right:24px}.marquee-track i.footer-star{padding:0 8px}}
+
+/* Privacy notice and required acknowledgement in the contact form. */
+.contact .privacy-check{display:flex;align-items:flex-start;gap:11px;text-transform:none;letter-spacing:0;font-size:11px;line-height:1.6;color:#756a60}
+.contact .privacy-check input{appearance:auto;flex:0 0 16px;width:16px;height:16px;margin:2px 0 0;accent-color:var(--espresso)}
+.contact .privacy-check a,.privacy-content a{border-bottom:1px solid var(--taupe)}
+.footer-privacy{grid-column:1/-1;justify-self:center;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #ffffff50;padding-bottom:3px}
+.privacy-page{min-height:100vh;background:var(--paper)}
+.privacy-page main{max-width:980px;margin:0 auto;padding:90px 7vw 110px}
+.privacy-page .privacy-content{max-width:720px}
+.privacy-page h1{font:400 clamp(42px,6vw,72px)/1.08 'Playfair Display',serif;letter-spacing:-.035em;margin:18px 0 20px}
+.privacy-page h1 em{font-weight:400;color:#927e6d}
+.privacy-page .privacy-lead{font:20px/1.55 'Playfair Display',serif;color:var(--espresso);max-width:620px}
+.privacy-page h2{font:26px/1.2 'Playfair Display',serif;margin:38px 0 10px}
+.privacy-page .privacy-content p,.privacy-page .privacy-content li{color:#756a60}
+.privacy-page .privacy-content ul{padding-left:20px}
+.privacy-page .privacy-back{display:inline-flex;margin-top:35px}
+.privacy-page footer{margin-top:auto}
+@media(max-width:650px){.privacy-page main{padding:60px 6vw 75px}.privacy-page h1{font-size:48px}.privacy-page h2{font-size:23px}.footer-privacy{font-size:8px}}
