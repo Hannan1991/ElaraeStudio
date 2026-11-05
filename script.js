@@ -37,7 +37,6 @@ const galleryItems={
     ['assets/Portfolio/Urban Bites/Mockups/Instagram Feed.png','De Instagram feed'],
     ['assets/Portfolio/Urban Bites/Mockups/Digitaal menu met QR-code.png','Het digitale menu'],
     ['assets/Portfolio/Urban Bites/Mockups/Take-away verpakking met branding.png','Take-away met branding'],
-    ['assets/Portfolio/Urban Bites/Mockups/Logo op verpakking.png','Het logo op de verpakking']
   ],
   lumora:[
     ['assets/Portfolio/Lumora Coaching/Mockups/desktopwebsite.png','De desktopwebsite'],
@@ -50,7 +49,7 @@ const galleryItems={
 };
 document.querySelectorAll('.project-gallery').forEach(gallery=>{
   const items=galleryItems[gallery.dataset.gallery];let current=0;
-  gallery.innerHTML=`<div class="gallery-stage"><img class="gallery-image" src="${items[0][0]}" alt="${items[0][1]}" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Vorige projectfoto">←</button><button class="gallery-arrow gallery-next" type="button" aria-label="Volgende projectfoto">→</button><span class="gallery-count" aria-live="polite">01 / 06</span></div><div class="gallery-footer"><span class="gallery-caption">${items[0][1]}</span><div class="gallery-thumbs">${items.map((item,index)=>`<button class="gallery-thumb${index===0?' active':''}" type="button" aria-label="Toon ${item[1]}" aria-pressed="${index===0}"><img src="${item[0]}" alt="" loading="lazy"></button>`).join('')}</div></div>`;
+  gallery.innerHTML=`<div class="gallery-stage"><img class="gallery-image" src="${items[0][0]}" alt="${items[0][1]}" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Vorige projectfoto">←</button><button class="gallery-arrow gallery-next" type="button" aria-label="Volgende projectfoto">→</button><span class="gallery-count" aria-live="polite">01 / ${String(items.length).padStart(2,'0')}</span></div><div class="gallery-footer"><span class="gallery-caption">${items[0][1]}</span><div class="gallery-thumbs">${items.map((item,index)=>`<button class="gallery-thumb${index===0?' active':''}" type="button" aria-label="Toon ${item[1]}" aria-pressed="${index===0}"><img src="${item[0]}" alt="" loading="lazy"></button>`).join('')}</div></div>`;
   const image=gallery.querySelector('.gallery-image'),caption=gallery.querySelector('.gallery-caption'),count=gallery.querySelector('.gallery-count'),thumbs=[...gallery.querySelectorAll('.gallery-thumb')];
   const show=index=>{current=(index+items.length)%items.length;image.src=items[current][0];image.alt=items[current][1];caption.textContent=items[current][1];count.textContent=`${String(current+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;thumbs.forEach((thumb,i)=>{thumb.classList.toggle('active',i===current);thumb.setAttribute('aria-pressed',String(i===current))})};
   gallery.querySelector('.gallery-prev').addEventListener('click',()=>show(current-1));gallery.querySelector('.gallery-next').addEventListener('click',()=>show(current+1));thumbs.forEach((thumb,index)=>thumb.addEventListener('click',()=>show(index)));

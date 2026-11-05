@@ -51,3 +51,31 @@
 .whatsapp svg{width:29px;height:29px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.whatsapp svg path:nth-child(2){fill:currentColor;stroke:none}
 @media(max-width:900px){.intro{grid-template-columns:.7fr 1.7fr .8fr;gap:3vw}.intro-logo{width:160px}.intro-pillars{gap:4px}.project-row{grid-template-columns:.62fr 1.38fr;gap:4vw}.package-card{flex-basis:56%}.package-carousel.expanded .package-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-location{gap:3vw;padding:26px}}
 @media(max-width:650px){.intro{display:grid;grid-template-columns:1fr;gap:30px}.intro-signature{max-width:none;align-items:flex-start}.intro-logo{width:175px;max-height:105px;object-position:left}.intro-pillars{max-width:320px}.project-list{gap:56px}.project-row{grid-template-columns:1fr;gap:22px}.project-story{max-width:none}.project-gallery{padding:12px 12px 10px;border-top-right-radius:48px!important}.gallery-stage{height:320px}.gallery-footer{align-items:flex-start;flex-direction:column}.gallery-thumbs{max-width:100%;width:100%}.sofia-badge{width:62px;height:62px;right:16px;bottom:16px;font-size:13px}.package-grid{padding:12px 16% 22px 0;gap:15px}.package-card{flex-basis:84%}.package-visual{height:235px}.carousel-arrow{top:36%;width:38px;height:38px}.carousel-prev{left:-9px}.carousel-next{right:-9px}.package-carousel.expanded .package-grid{grid-template-columns:1fr;gap:20px}.package-carousel.expanded .package-card{width:100%}.contact-location{grid-template-columns:1fr;gap:22px;margin-top:45px;padding:23px;border-top-right-radius:48px}.map-frame,.map-frame iframe{min-height:225px}}
+
+/* Refinements from the latest review */
+.email-cta{display:inline-flex;align-items:center;gap:10px;margin-top:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;font-family:'Playfair Display',serif;font-size:18px}
+.email-icon{font-family:Arial,sans-serif;font-size:16px;color:#9d8269;line-height:1}
+.email-cta span:last-child{font:14px 'DM Sans';color:#9d8269;margin-left:5px;transition:transform .2s}
+.email-cta:hover span:last-child{transform:translate(3px,-3px)}
+.contact select{font-size:14px}
+.intro{grid-template-columns:1.05fr .95fr;gap:8vw}
+.intro-signature{width:100%;max-width:430px;justify-self:center;gap:28px}
+.intro-logo{width:min(340px,100%);max-height:220px}
+.intro-pillars{gap:20px;padding-top:22px}
+.intro-pillars>div{font-size:10px}
+.pillar-icon{font-size:27px}
+.sofia-image{border-radius:150px 150px 3px 3px}
+.sofia-image img{object-fit:cover;object-position:center 42%;mix-blend-mode:normal;transform:scale(1.24)}
+.sofia-badge{right:22px;bottom:22px;width:auto;height:auto;padding:10px 17px;border:1px solid #b9a997;border-radius:999px;background:#f6f2ebed;font:12px 'DM Sans';font-weight:500;letter-spacing:.18em;box-shadow:0 4px 16px #302a2618}
+@media(max-width:900px){.intro{grid-template-columns:1fr .9fr;gap:5vw}.intro-signature{max-width:340px}.intro-logo{width:min(280px,100%)}.intro-pillars{gap:8px}}
+@media(max-width:650px){.email-cta{margin-top:14px;font-size:16px}.intro{grid-template-columns:1fr;gap:26px}.intro-signature{max-width:320px;justify-self:start;gap:16px}.intro-logo{width:175px;max-height:105px}.intro-pillars{max-width:300px;padding-top:13px;gap:8px}.intro-pillars>div{font-size:8px}.pillar-icon{font-size:21px}.sofia-image{width:80%;height:390px;border-radius:112px 112px 3px 3px}.sofia-image img{transform:scale(1.2);object-position:center 42%}.sofia-badge{right:12px;bottom:12px;padding:8px 13px;font-size:10px}}
+
+/* Refined moving footer signature */
+footer{overflow:hidden;grid-template-columns:auto minmax(0,1fr);column-gap:5vw;row-gap:24px}
+.footer-marquee{overflow:hidden;white-space:nowrap;min-width:0;border-left:1px solid #ffffff35;padding-left:4vw}
+.marquee-track{display:flex;width:max-content;animation:signature-marquee 34s linear infinite}
+.marquee-track span{flex:0 0 auto;padding-right:5vw;font-size:10px;letter-spacing:.12em;color:#e8ddd0}
+.marquee-track i{font-style:normal;color:#c2a274;padding:0 22px}
+@keyframes signature-marquee{to{transform:translateX(-50%)}}
+@media(max-width:650px){footer{grid-template-columns:1fr;row-gap:14px}.footer-marquee{grid-column:1/-1;grid-row:auto;border-left:0;border-top:1px solid #ffffff35;padding:14px 0 0}.marquee-track span{font-size:9px;padding-right:7vw}.marquee-track i{padding:0 14px}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;transform:none}.footer-marquee{overflow:auto}.marquee-track span[aria-hidden=true]{display:none}}
