@@ -104,7 +104,6 @@ footer{overflow:hidden;grid-template-columns:auto minmax(0,1fr);column-gap:5vw;r
 .contact .privacy-check{display:flex;align-items:flex-start;gap:11px;text-transform:none;letter-spacing:0;font-size:11px;line-height:1.6;color:#756a60}
 .contact .privacy-check input{appearance:auto;flex:0 0 16px;width:16px;height:16px;margin:2px 0 0;accent-color:var(--espresso)}
 .contact .privacy-check a,.privacy-content a{border-bottom:1px solid var(--taupe)}
-.footer-privacy{grid-column:1/-1;justify-self:center;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #ffffff50;padding-bottom:3px}
 .privacy-page{min-height:100vh;background:var(--paper)}
 .privacy-page main{max-width:980px;margin:0 auto;padding:90px 7vw 110px}
 .privacy-page .privacy-content{max-width:720px}
@@ -116,10 +115,11 @@ footer{overflow:hidden;grid-template-columns:auto minmax(0,1fr);column-gap:5vw;r
 .privacy-page .privacy-content ul{padding-left:20px}
 .privacy-page .privacy-back{display:inline-flex;margin-top:35px}
 .privacy-page footer{margin-top:auto}
-@media(max-width:650px){.privacy-page main{padding:60px 6vw 75px}.privacy-page h1{font-size:48px}.privacy-page h2{font-size:23px}.footer-privacy{font-size:8px}}
+@media(max-width:650px){.privacy-page main{padding:60px 6vw 75px}.privacy-page h1{font-size:48px}.privacy-page h2{font-size:23px}}
 
 /* The approved secondary wordmark balances the studio introduction on desktop. */
 .intro-signature{max-width:340px;gap:22px}
 .intro-logo{width:min(250px,100%);max-height:160px}
 @media(max-width:900px){.intro-signature{max-width:300px}.intro-logo{width:min(225px,100%);max-height:145px}}
 @media(max-width:650px){.intro-signature{max-width:320px;gap:16px}.intro-logo{width:175px;max-height:105px}}
+
