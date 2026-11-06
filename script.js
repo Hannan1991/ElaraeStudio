@@ -55,3 +55,14 @@ document.querySelectorAll('.project-gallery').forEach(gallery=>{
   gallery.querySelector('.gallery-prev').addEventListener('click',()=>show(current-1));gallery.querySelector('.gallery-next').addEventListener('click',()=>show(current+1));thumbs.forEach((thumb,index)=>thumb.addEventListener('click',()=>show(index)));
   let touchStart=0;gallery.querySelector('.gallery-stage').addEventListener('touchstart',event=>touchStart=event.changedTouches[0].clientX,{passive:true});gallery.querySelector('.gallery-stage').addEventListener('touchend',event=>{const delta=event.changedTouches[0].clientX-touchStart;if(Math.abs(delta)>45)show(current+(delta<0?1:-1))},{passive:true});
 });
+
+document.querySelectorAll('.map-load-button').forEach(button=>button.addEventListener('click',()=>{
+  const panel=button.closest('.map-consent-panel');
+  if(!panel)return;
+  const frame=document.createElement('iframe');
+  frame.title='Kaart van de provincie Antwerpen en omgeving';
+  frame.src='https://maps.google.com/maps?q=Antwerpen%2C%20Belgi%C3%AB&t=&z=9&ie=UTF8&iwloc=&output=embed';
+  frame.loading='lazy';
+  frame.referrerPolicy='no-referrer-when-downgrade';
+  panel.replaceWith(frame);
+}));
