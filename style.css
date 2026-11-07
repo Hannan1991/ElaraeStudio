@@ -228,8 +228,4 @@ footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0
 .footer-legal-links{grid-column:1/-1;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px}
 .footer-legal-links a{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #ffffff50;padding-bottom:3px}
 .privacy-page .footer-legal-links{margin:0 auto}
-.map-consent-panel{min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:25px;text-align:center;background:var(--sand);color:var(--espresso)}
-.map-consent-panel p{max-width:360px;margin:0;font-size:12px}
-.map-load-button{border:1px solid var(--taupe);background:var(--paper);color:var(--ink);padding:12px 18px;font:500 10px 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
-.map-load-button:hover{background:var(--ink);color:var(--cream)}
-@media(max-width:650px){.footer-legal-links{justify-content:center;gap:14px}.footer-legal-links a{font-size:8px}.map-consent-panel{min-height:225px;padding:20px}}
+@media(max-width:650px){.footer-legal-links{justify-content:center;gap:14px}.footer-legal-links a{font-size:8px}}
