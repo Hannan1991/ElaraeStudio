@@ -236,3 +236,5 @@ footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0
 .project-video video { display: block; width: 100%; aspect-ratio: 1272 / 706; background: #f1efeb; border-radius: 3px; }
 .project-video figcaption { margin: 12px 0 2px; color: #66564d; font-size: 12px; }
 @media (max-width: 760px) { #elyra-gloss { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+
+#portfolio .portfolio-intro { margin: 16px 0 0; max-width: 44ch; color: #756a60; line-height: 1.65; }
