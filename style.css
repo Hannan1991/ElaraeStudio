@@ -229,3 +229,10 @@ footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0
 .footer-legal-links a{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#e8ddd0;border-bottom:1px solid #ffffff50;padding-bottom:3px}
 .privacy-page .footer-legal-links{margin:0 auto}
 @media(max-width:650px){.footer-legal-links{justify-content:center;gap:14px}.footer-legal-links a{font-size:8px}}
+
+#elyra-gloss { scroll-margin-top: 100px; }
+.elyra-gallery { background: #e9ded4; border-radius: 4px 64px 4px 4px; }
+.project-video { margin: 0; }
+.project-video video { display: block; width: 100%; aspect-ratio: 1272 / 706; background: #f1efeb; border-radius: 3px; }
+.project-video figcaption { margin: 12px 0 2px; color: #66564d; font-size: 12px; }
+@media (max-width: 760px) { #elyra-gloss { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
