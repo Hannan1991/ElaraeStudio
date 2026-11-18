@@ -1,4 +1,3 @@
-/* One source of truth for portfolio media and counts. */
 window.ELARAE_PROJECTS = [
   {
     "id": "elan",
@@ -202,7 +201,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/gloss-mobile-home.webp",
         "alt": "De mobiele homepage",
-        "caption": "De mobiele homepage",
+        "caption": "Een heldere eerste stap op mobiel.",
         "layout": "pair",
         "pair": "assets/cases/gloss-mobile-product.webp"
       },
@@ -210,7 +209,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/gloss-mobile-product.webp",
         "alt": "De mobiele productervaring",
-        "caption": "De mobiele productervaring",
+        "caption": "Kiezen en bevestigen blijven binnen bereik.",
         "layout": "pair",
         "pair": "assets/cases/gloss-mobile-home.webp"
       }
@@ -236,49 +235,49 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/shop-campaign-product.webp",
         "alt": "De volledige productervaring met campagne, modelkeuze en galerij",
-        "caption": "De volledige productervaring",
+        "caption": "Oriëntatie, vergelijking en actie in één context.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-home.webp",
         "alt": "De homepage en de ingang naar het aanbod",
-        "caption": "De homepage en de ingang naar het aanbod",
+        "caption": "Een duidelijke ingang vóór de eerste keuze.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-stone-case.webp",
         "alt": "De productpagina met Stone geselecteerd",
-        "caption": "De productpagina met Stone geselecteerd",
+        "caption": "Elke weergave bevestigt dezelfde selectie.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-mocha-brown-case.webp",
         "alt": "Dezelfde productpagina in Mocha Brown",
-        "caption": "Dezelfde productpagina in Mocha Brown",
+        "caption": "Een andere keuze, dezelfde vertrouwde bediening.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-collection.webp",
         "alt": "Het productoverzicht ondersteunt vergelijken",
-        "caption": "Het productoverzicht ondersteunt vergelijken",
+        "caption": "Een vaste rangorde maakt vergelijken eenvoudiger.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-detail.webp",
         "alt": "Een detail onderzoeken binnen dezelfde context",
-        "caption": "Een detail onderzoeken binnen dezelfde context",
+        "caption": "Verdiepen zonder de gemaakte keuze te verliezen.",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-mobile-home.webp",
         "alt": "De mobiele homepage",
-        "caption": "De mobiele homepage",
+        "caption": "Een heldere eerste stap op mobiel.",
         "layout": "pair",
         "pair": "assets/cases/shop-mobile-product.webp"
       },
@@ -286,7 +285,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/shop-mobile-product.webp",
         "alt": "De mobiele productervaring",
-        "caption": "De mobiele productervaring",
+        "caption": "Kiezen en bevestigen blijven binnen bereik.",
         "layout": "pair",
         "pair": "assets/cases/shop-mobile-home.webp"
       }
