@@ -95,3 +95,8 @@ body { line-height: 1.6; }
 .case-shop .video-stage video { aspect-ratio: 9 / 16; width: 100%; max-width: 380px; height: auto; object-fit: contain; justify-self: center; }
 .case-shop .video-stage figcaption { max-width: 34ch; }
 @media(max-width:760px) { .case-shop .video-stage { grid-template-columns: minmax(0,1fr); gap: 0; } .case-shop .video-stage video { max-width: 340px; } }
+
+/* Consistent wide portfolio showcase. */
+.case-shop .video-stage { grid-template-columns: minmax(0,2fr) minmax(230px,.7fr); max-width: none; margin-inline: 0; gap: 35px; }
+.case-shop .video-stage video { width: 100%; max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+@media(max-width:760px) { .case-shop .video-stage { grid-template-columns: minmax(0,1fr); gap: 0; } .case-shop .video-stage video { max-width: none; } }

@@ -246,3 +246,15 @@ footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0
 
 /* Fullscreen Shop portfolio preview, native 16:9. */
 #elyra-shop .project-video video { aspect-ratio: 9 / 16; width: 100%; max-width: 340px; height: auto; margin-inline: auto; object-fit: contain; }
+
+/* Elyra Shop: one media-first project card, one consistent video frame. */
+#portfolio #elyra-shop { display: grid; grid-template-columns: minmax(0,1fr); gap: 18px; }
+#elyra-shop .project-gallery { width: 100%; min-width: 0; }
+#elyra-shop .project-video video { width: 100%; max-width: none; height: auto; aspect-ratio: 16 / 9; margin: 0; object-fit: contain; }
+#elyra-shop .project-story { max-width: 760px; }
+#elyra-shop .project-story > span { display: block; font-size: 11px; line-height: 1.45; letter-spacing: .12em; }
+#portfolio #elyra-shop .project-story h3 { font-size: clamp(28px,3vw,38px); line-height: 1.15; margin: 7px 0 6px; }
+#portfolio #elyra-shop .project-story p { font-size: 16px; line-height: 1.55; max-width: 60ch; margin: 0; }
+#portfolio #elyra-shop .text-link { display: inline-flex; width: max-content; max-width: 100%; min-height: 44px; margin-top: 10px; padding: 8px 0; font-size: 14px; line-height: 1.4; letter-spacing: .02em; text-transform: none; gap: 16px; }
+#elyra-shop .text-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+@media(max-width:650px) { #portfolio #elyra-shop { gap: 16px; } #portfolio #elyra-shop .project-story p { font-size: 15px; } }
