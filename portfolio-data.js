@@ -228,7 +228,7 @@ window.ELARAE_PROJECTS = [
       {
         "type": "video",
         "src": "assets/cases/shop-showcase.mp4?v=wide-20261118",
-        "poster": "assets/cases/shop-showcase-wide-poster.webp",
+        "poster": "assets/cases/shop-video-cover.png",
         "caption": "De winkelervaring · 15 seconden",
         "alt": "Elyra Shop — showcase"
       },

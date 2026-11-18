@@ -33,3 +33,33 @@
 @media(max-width:650px){.project-list{gap:52px}.portfolio-project{scroll-margin-top:82px}.pf-info{padding-top:16px}.pf-meta{font-size:9px;letter-spacing:.08em}.pf-description{font-size:15px}.pf-counts{font-size:12px}.pf-prev{left:8px}.pf-next{right:8px}.pf-expand{top:8px;right:8px}.pf-composition{gap:8px;padding:8px}.pf-detail-tag{font-size:9px;bottom:5px;right:5px}.pf-dialog-head{min-height:68px;padding:12px 14px;gap:10px}.pf-dialog-head h2{font-size:19px}.pf-dialog button{font-size:12px;padding:8px 11px}.pf-viewer{padding:12px}.pf-dialog-foot{gap:8px;padding:12px 10px max(12px,env(safe-area-inset-bottom))}.pf-dialog-caption{font-size:12px}.pf-dialog-count{font-size:10px}}
 @media(max-width:650px){.pf-dialog[open]{grid-template-rows:80px minmax(0,1fr) 96px}}
 @media(prefers-reduced-motion:reduce){.pf-surface,.pf-media{scroll-behavior:auto}}
+
+/* Restore the original editorial portfolio scale and thumbnail navigation. */
+#portfolio .project-list{display:flex;flex-direction:column;gap:82px}
+#portfolio .portfolio-project{display:grid;grid-template-columns:.72fr 1.28fr;gap:6vw;align-items:center;max-width:none}
+#portfolio .pf-info{max-width:390px;padding:0}
+#portfolio .pf-meta{font-size:9px;letter-spacing:.18em}
+#portfolio .pf-position{display:none}
+#portfolio .pf-info h3{font:400 clamp(30px,3.3vw,44px)/1.2 'Playfair Display',Georgia,serif;margin:12px 0}
+#portfolio .pf-description{font-size:14px;line-height:1.75}
+#portfolio .pf-case-link{font-size:9px;text-transform:uppercase;letter-spacing:.12em;min-height:44px;margin-top:9px}
+#portfolio .pf-gallery{min-width:0;background:#e7ddd2;padding:20px 20px 13px;border-radius:4px 80px 4px 4px}
+#portfolio .portfolio-project:nth-child(2) .pf-gallery{background:#e6d9c8;border-radius:80px 4px 4px 4px}
+#portfolio .portfolio-project:nth-child(3) .pf-gallery{background:#ded8ce;border-radius:4px 4px 80px 4px}
+#portfolio .pf-surface{height:clamp(310px,39vw,490px);aspect-ratio:auto;border:0;border-radius:0;background:#f7f2eb}
+#portfolio .pf-media{background:#f7f2eb}
+#portfolio .pf-item{padding:12px;object-fit:contain}
+#portfolio .pf-gallery-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 2px 0}
+#portfolio .pf-caption{font:16px/1.35 'Playfair Display',Georgia,serif;color:#51463d}
+#portfolio .pf-thumbs{display:flex;gap:7px;overflow-x:auto;max-width:65%;padding:2px}
+#portfolio .pf-thumb{position:relative;width:48px;height:38px;flex:0 0 auto;padding:0;border:1px solid transparent;background:transparent;opacity:.55;cursor:pointer;overflow:hidden}
+#portfolio .pf-thumb.active{border-color:#9e8061;opacity:1}
+#portfolio .pf-thumb img{width:100%;height:100%;object-fit:cover}
+#portfolio .pf-thumb span{position:absolute;inset:0;display:grid;place-items:center;color:white;text-shadow:0 1px 4px #000;font-size:13px}
+#portfolio .pf-thumb:focus-visible{outline:2px solid #493127;outline-offset:1px}
+#portfolio .pf-counts{margin:9px 2px 0;font-size:10px}
+@media(max-width:900px){#portfolio .portfolio-project{grid-template-columns:.62fr 1.38fr;gap:4vw}}
+@media(max-width:650px){#portfolio .project-list{gap:56px}#portfolio .portfolio-project{grid-template-columns:1fr;gap:22px}#portfolio .pf-info{max-width:none}#portfolio .pf-gallery{padding:12px 12px 10px;border-top-right-radius:48px!important}#portfolio .pf-surface{height:320px}#portfolio .pf-gallery-footer{align-items:flex-start;flex-direction:column;gap:10px}#portfolio .pf-thumbs{max-width:100%;width:100%}}
+#portfolio #elyra-shop.portfolio-project{grid-template-columns:.72fr 1.28fr;gap:6vw}
+@media(max-width:900px){#portfolio #elyra-shop.portfolio-project{grid-template-columns:.62fr 1.38fr;gap:4vw}}
+@media(max-width:650px){#portfolio #elyra-shop.portfolio-project{grid-template-columns:1fr;gap:22px}}
