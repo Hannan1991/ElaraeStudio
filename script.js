@@ -47,7 +47,7 @@ const galleryItems={
     ['assets/Portfolio/Lumora Coaching/Mockups/Visitekaartje.png','Het visitekaartje']
   ]
 };
-document.querySelectorAll('.project-gallery').forEach(gallery=>{
+document.querySelectorAll('.project-gallery[data-gallery]').forEach(gallery=>{
   const items=galleryItems[gallery.dataset.gallery];let current=0;
   gallery.innerHTML=`<div class="gallery-stage"><img class="gallery-image" src="${items[0][0]}" alt="${items[0][1]}" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Vorige projectfoto">←</button><button class="gallery-arrow gallery-next" type="button" aria-label="Volgende projectfoto">→</button><span class="gallery-count" aria-live="polite">01 / ${String(items.length).padStart(2,'0')}</span></div><div class="gallery-footer"><span class="gallery-caption">${items[0][1]}</span><div class="gallery-thumbs">${items.map((item,index)=>`<button class="gallery-thumb${index===0?' active':''}" type="button" aria-label="Toon ${item[1]}" aria-pressed="${index===0}"><img src="${item[0]}" alt="" loading="lazy"></button>`).join('')}</div></div>`;
   const image=gallery.querySelector('.gallery-image'),caption=gallery.querySelector('.gallery-caption'),count=gallery.querySelector('.gallery-count'),thumbs=[...gallery.querySelectorAll('.gallery-thumb')];

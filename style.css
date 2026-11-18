@@ -238,3 +238,11 @@ footer .footer-rights{position:absolute;right:7vw;bottom:18px;margin:0;padding:0
 @media (max-width: 760px) { #elyra-gloss { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
 
 #portfolio .portfolio-intro { margin: 16px 0 0; max-width: 44ch; color: #756a60; line-height: 1.65; }
+
+/* Compact portfolio captions; every project remains its own row. */
+#portfolio .project-story h3 { margin: 8px 0 5px; }
+#portfolio .project-story p { margin: 0; line-height: 1.65; }
+#elyra-shop { scroll-margin-top: 100px; }
+
+/* Fullscreen Shop portfolio preview, native 16:9. */
+#elyra-shop .project-video video { aspect-ratio: 9 / 16; width: 100%; max-width: 340px; height: auto; margin-inline: auto; object-fit: contain; }
