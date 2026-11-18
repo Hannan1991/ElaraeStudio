@@ -21,38 +21,3 @@ packageCarousel.querySelector('.carousel-prev').addEventListener('click',()=>pac
 packageCarousel.querySelector('.carousel-next').addEventListener('click',()=>packageGrid.scrollBy({left:packageGrid.clientWidth*.72,behavior:'smooth'}));
 const allPackagesButton=document.querySelector('.packages-all');
 allPackagesButton.addEventListener('click',()=>{const expanded=packageCarousel.classList.toggle('expanded');allPackagesButton.setAttribute('aria-expanded',String(expanded));allPackagesButton.innerHTML=expanded?'Terug naar swipe <span>↑</span>':'Bekijk alle pakketten <span>↓</span>';if(!expanded)packageGrid.scrollTo({left:0,behavior:'smooth'})});
-
-const galleryItems={
-  elan:[
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Desktop Website.png','De volledige website'],
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Mobiele Website.png','De mobiele website'],
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Instagrampagina.png','Instagram in de merksignatuur'],
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Afsprakenkaart.png','De afsprakenkaart'],
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Cadeaubon.png','De cadeaubon'],
-    ['assets/Portfolio/Élan Nail Studio/Mockups/Visitekaart.png','Het visitekaartje']
-  ],
-  urban:[
-    ['assets/Portfolio/Urban Bites/Mockups/Website Desktop.png','De desktopwebsite'],
-    ['assets/Portfolio/Urban Bites/Mockups/Website Mobiel.png','De mobiele website'],
-    ['assets/Portfolio/Urban Bites/Mockups/Instagram Feed.png','De Instagram feed'],
-    ['assets/Portfolio/Urban Bites/Mockups/Digitaal menu met QR-code.png','Het digitale menu'],
-    ['assets/Portfolio/Urban Bites/Mockups/Take-away verpakking met branding.png','Take-away met branding'],
-  ],
-  lumora:[
-    ['assets/Portfolio/Lumora Coaching/Mockups/desktopwebsite.png','De desktopwebsite'],
-    ['assets/Portfolio/Lumora Coaching/Mockups/mobiele website met afspraakformulier.png','De mobiele website'],
-    ['assets/Portfolio/Lumora Coaching/Mockups/Instagram Feed.png','De Instagram feed'],
-    ['assets/Portfolio/Lumora Coaching/Mockups/E-Book.png','Het e-book'],
-    ['assets/Portfolio/Lumora Coaching/Mockups/Werkboek.png','Het werkboek'],
-    ['assets/Portfolio/Lumora Coaching/Mockups/Visitekaartje.png','Het visitekaartje']
-  ]
-};
-document.querySelectorAll('.project-gallery[data-gallery]').forEach(gallery=>{
-  const items=galleryItems[gallery.dataset.gallery];let current=0;
-  gallery.innerHTML=`<div class="gallery-stage"><img class="gallery-image" src="${items[0][0]}" alt="${items[0][1]}" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" aria-label="Vorige projectfoto">←</button><button class="gallery-arrow gallery-next" type="button" aria-label="Volgende projectfoto">→</button><span class="gallery-count" aria-live="polite">01 / ${String(items.length).padStart(2,'0')}</span></div><div class="gallery-footer"><span class="gallery-caption">${items[0][1]}</span><div class="gallery-thumbs">${items.map((item,index)=>`<button class="gallery-thumb${index===0?' active':''}" type="button" aria-label="Toon ${item[1]}" aria-pressed="${index===0}"><img src="${item[0]}" alt="" loading="lazy"></button>`).join('')}</div></div>`;
-  const image=gallery.querySelector('.gallery-image'),caption=gallery.querySelector('.gallery-caption'),count=gallery.querySelector('.gallery-count'),thumbs=[...gallery.querySelectorAll('.gallery-thumb')];
-  const show=index=>{current=(index+items.length)%items.length;image.src=items[current][0];image.alt=items[current][1];caption.textContent=items[current][1];count.textContent=`${String(current+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;thumbs.forEach((thumb,i)=>{thumb.classList.toggle('active',i===current);thumb.setAttribute('aria-pressed',String(i===current))})};
-  gallery.querySelector('.gallery-prev').addEventListener('click',()=>show(current-1));gallery.querySelector('.gallery-next').addEventListener('click',()=>show(current+1));thumbs.forEach((thumb,index)=>thumb.addEventListener('click',()=>show(index)));
-  let touchStart=0;gallery.querySelector('.gallery-stage').addEventListener('touchstart',event=>touchStart=event.changedTouches[0].clientX,{passive:true});gallery.querySelector('.gallery-stage').addEventListener('touchend',event=>{const delta=event.changedTouches[0].clientX-touchStart;if(Math.abs(delta)>45)show(current+(delta<0?1:-1))},{passive:true});
-});
-
