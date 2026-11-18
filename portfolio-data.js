@@ -234,6 +234,13 @@ window.ELARAE_PROJECTS = [
       },
       {
         "type": "image",
+        "src": "assets/cases/shop-campaign-product.webp",
+        "alt": "De volledige productervaring met campagne, modelkeuze en galerij",
+        "caption": "De volledige productervaring",
+        "layout": "single"
+      },
+      {
+        "type": "image",
         "src": "assets/cases/shop-home.webp",
         "alt": "De homepage en de ingang naar het aanbod",
         "caption": "De homepage en de ingang naar het aanbod",
