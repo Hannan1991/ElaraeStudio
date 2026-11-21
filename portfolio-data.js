@@ -290,5 +290,81 @@ window.ELARAE_PROJECTS = [
         "pair": "assets/cases/shop-mobile-home.webp"
       }
     ]
+  },
+  {
+    "id": "aureon-construct",
+    "number": "06",
+    "name": "Aureon Construct",
+    "sector": "Website Design · UX/UI · Development · Motion Design",
+    "description": "Voor Aureon Construct komen vakmanschap, architectuur en een heldere gebruikerservaring samen. Website en film vertellen één verhaal, met aandacht voor materiaal, beweging en detail.",
+    "caseUrl": "aureon-construct.html",
+    "tone": "#deddd3",
+    "media": [
+      {
+        "type": "video",
+        "src": "assets/cases/aureon/aureon-showcase-45s.mp4",
+        "poster": "assets/cases/aureon/aureon-cover-refined.webp",
+        "caption": "Website Design · UX/UI · Development · Motion Design",
+        "alt": "Aureon Construct — website en showcasefilm door Elarae Studio"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/home.webp",
+        "alt": "AUREON CONSTRUCT — Een eerste indruk met rust en richting.",
+        "caption": "Een eerste indruk met rust en richting.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/work.webp",
+        "alt": "AUREON CONSTRUCT — Het werk wordt zichtbaar tijdens het scrollen.",
+        "caption": "Het werk wordt zichtbaar tijdens het scrollen.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/services.webp",
+        "alt": "AUREON CONSTRUCT — Diensten op één herkenbare manier gepresenteerd.",
+        "caption": "Diensten op één herkenbare manier gepresenteerd.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/beforeafter.webp",
+        "alt": "AUREON CONSTRUCT — Dezelfde ruimte, een zichtbaar verschil.",
+        "caption": "Dezelfde ruimte, een zichtbaar verschil.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/process.webp",
+        "alt": "AUREON CONSTRUCT — Een heldere route van kennismaking naar afwerking.",
+        "caption": "Een heldere route van kennismaking naar afwerking.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/detail.webp",
+        "alt": "AUREON CONSTRUCT — Van de opbouw tot de afgewerkte wand.",
+        "caption": "Van de opbouw tot de afgewerkte wand.",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/mobile-home.webp",
+        "alt": "AUREON CONSTRUCT — De mobiele homepage.",
+        "caption": "De mobiele homepage.",
+        "layout": "pair",
+        "pair": "assets/cases/aureon/mobile-service-aligned.webp"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/mobile-service-aligned.webp",
+        "alt": "AUREON CONSTRUCT — De mobiele dienstenervaring.",
+        "caption": "De mobiele dienstenervaring.",
+        "layout": "pair",
+        "pair": "assets/cases/aureon/mobile-home.webp"
+      }
+    ]
   }
 ];

@@ -1,0 +1,1 @@
+document.querySelectorAll('.aureon-comparison').forEach(el=>{const input=el.querySelector('input');const update=()=>{el.style.setProperty('--split',input.value+'%');input.setAttribute('aria-valuetext',input.value+' procent van de vóór-situatie zichtbaar');};input.addEventListener('input',update);update();});
