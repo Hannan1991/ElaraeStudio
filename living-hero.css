@@ -12,3 +12,16 @@
 .living-hero .card .visual:focus-visible{outline-offset:5px}
 @media(max-width:700px){.living-hero .card .visual,.living-hero .card.active .visual{height:auto;border-radius:66px 3px 3px 3px}.living-hero .card:nth-child(2) .visual{border-radius:3px 66px 3px 3px}}
 .living-hero .intro{min-height:0;background:transparent}.living-hero h1{margin:0;line-height:1.07}.living-hero .intro .support{margin:0 0 19px}.living-hero .intro .contact{margin:0}@media(max-width:700px){.living-hero .intro .support{margin:20px 0 15px}.living-hero h1{line-height:1.1}}
+
+/* Final editorial refinements: one accent system, distinct project identities. */
+.living-hero{--hero-accent:#493b32;--hero-secondary:#927e6d;--hero-dark:#302720}
+.living-hero .card:nth-child(3) .visual,.living-hero .card:nth-child(3).active .visual{border-radius:4px}
+.living-hero .contact,.living-hero .card a{color:var(--hero-accent);border-bottom-color:var(--hero-secondary);position:relative;transition:color .3s}
+.living-hero .contact:after,.living-hero .card a:after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--hero-accent);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,.61,.36,1)}
+.living-hero .contact:hover,.living-hero .card a:hover,.living-hero .contact:focus-visible,.living-hero .card a:focus-visible{color:var(--hero-accent)}
+.living-hero .contact:hover:after,.living-hero .card a:hover:after,.living-hero .contact:focus-visible:after,.living-hero .card a:focus-visible:after{transform:scaleX(1)}
+.living-hero .card .number{color:var(--hero-secondary);transition:color .3s}
+.living-hero .card.active .number{color:var(--hero-dark)}
+.living-hero .controls button{color:var(--hero-accent)}
+@media(min-width:701px){.living-hero .rail:has(.card:nth-child(1).active){grid-template-columns:1.12fr 1fr 1fr}.living-hero .rail:has(.card:nth-child(2).active){grid-template-columns:1fr 1.12fr 1fr}.living-hero .rail:has(.card:nth-child(3).active){grid-template-columns:1fr 1fr 1.12fr}.living-hero .card.active{transform:scale(1.015)}}
+@media(prefers-reduced-motion:reduce){.living-hero .contact:after,.living-hero .card a:after,.living-hero .number{transition:none}.living-hero .card.active{transform:none}}
