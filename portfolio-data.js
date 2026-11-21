@@ -355,11 +355,11 @@ window.ELARAE_PROJECTS = [
         "alt": "AUREON CONSTRUCT — De mobiele homepage.",
         "caption": "De mobiele homepage.",
         "layout": "pair",
-        "pair": "assets/cases/aureon/mobile-service-aligned.webp"
+        "pair": "assets/cases/aureon/mobile-service-cormorant.webp"
       },
       {
         "type": "image",
-        "src": "assets/cases/aureon/mobile-service-aligned.webp",
+        "src": "assets/cases/aureon/mobile-service-cormorant.webp",
         "alt": "AUREON CONSTRUCT — De mobiele dienstenervaring.",
         "caption": "De mobiele dienstenervaring.",
         "layout": "pair",
