@@ -8,4 +8,14 @@ let model='aaliyah',shade='nude-beige';const shadeNames={'nude-beige':'Nude Beig
 
 for(const b of root.querySelectorAll('[data-model],[data-shade]'))b.addEventListener('click',()=>{const im=root.querySelectorId('fashion-model');im.decode().catch(()=>{});});for(const m of ['nora','aaliyah'])for(const c of ['nude-beige','mocha-brown','stone']){let im=new Image();im.src='assets/hero/'+m+'-'+c+'.webp'}
 
-const observer=new IntersectionObserver(entries=>{for(const e of entries){if(!e.isIntersecting)cards.forEach(c=>c.querySelector('video')?.pause());else select(active)}},{threshold:.15});observer.observe(root);})();
+const observer=new IntersectionObserver(entries=>{for(const e of entries){if(!e.isIntersecting)cards.forEach(c=>c.querySelector('video')?.pause());else select(active)}},{threshold:.15});observer.observe(root);
+// Colour demonstration runs only while Shop is selected and yields to real input.
+let shopInteracted=false,demoStep=0,demoTimer=null,heroVisible=true;
+const demoShades=['nude-beige','mocha-brown','stone'];
+function stopDemo(){clearTimeout(demoTimer);demoTimer=null;root.querySelectorAll('.demo-select').forEach(e=>e.classList.remove('demo-select'))}
+function scheduleDemo(){stopDemo();if(active!==2||paused||matchMedia('(prefers-reduced-motion: reduce)').matches||shopInteracted||document.hidden||!heroVisible)return;demoTimer=setTimeout(()=>{const next=demoShades[(++demoStep)%3];const button=root.querySelector('[data-shade="'+next+'"]');button.classList.add('demo-select');demoTimer=setTimeout(()=>{if(active!==2||paused||shopInteracted||document.hidden||!heroVisible){stopDemo();return}shade=next;updateShop();button.classList.remove('demo-select');scheduleDemo()},450)},2100)}
+const originalSelect=select;select=function(n,scroll=false){originalSelect(n,scroll);scheduleDemo()};
+root.querySelectorAll('[data-model],[data-shade]').forEach(b=>{b.addEventListener('pointerdown',()=>{shopInteracted=true;stopDemo()});b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){shopInteracted=true;stopDemo()}})});
+new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;if(heroVisible)scheduleDemo();else stopDemo()},{threshold:.15}).observe(root);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopDemo();else scheduleDemo()});
+})();

@@ -25,3 +25,9 @@
 .living-hero .controls button{color:var(--hero-accent)}
 @media(min-width:701px){.living-hero .rail:has(.card:nth-child(1).active){grid-template-columns:1.12fr 1fr 1fr}.living-hero .rail:has(.card:nth-child(2).active){grid-template-columns:1fr 1.12fr 1fr}.living-hero .rail:has(.card:nth-child(3).active){grid-template-columns:1fr 1fr 1.12fr}.living-hero .card.active{transform:scale(1.015)}}
 @media(prefers-reduced-motion:reduce){.living-hero .contact:after,.living-hero .card a:after,.living-hero .number{transition:none}.living-hero .card.active{transform:none}}
+
+/* Discreet selection cue and comfortable touch targets. */
+.living-hero .swatches button.demo-select:before{outline:1px solid var(--hero-accent);outline-offset:4px}
+.living-hero .swatches button.demo-select:after{content:'';position:absolute;width:9px;height:13px;right:1px;bottom:1px;background:var(--hero-accent);clip-path:polygon(0 0,100% 65%,58% 67%,41% 100%);pointer-events:none}
+@media(max-width:700px){.living-hero .swatches button{width:44px;min-width:44px;height:44px}.living-hero .swatches button:before{inset:12px}.living-hero .model-choice button{min-height:44px;min-width:44px;padding:0 2px}.living-hero .shop-tools{padding:4px;gap:0}.living-hero .shade-choice{gap:0}.living-hero .shade-choice>img{width:28px!important}}
+@media(max-width:360px){.living-hero .card{flex-basis:88%}.living-hero .shade-choice>img{width:24px!important}}
