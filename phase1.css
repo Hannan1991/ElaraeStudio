@@ -99,3 +99,20 @@ footer .footer-legal-links a:focus-visible,footer .footer-legal-links .privacy-s
  footer .marquee-track .footer-star{display:none}
 }
 .footer-signature-line{font:inherit;color:inherit}
+
+/* Full-width consent bar approved after desktop and mobile preview. */
+.privacy-banner{left:0;right:0;bottom:0;max-width:none;width:100%;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:18px 5vw;background:#f6f2eb;border:0;border-top:1px solid #d9d0c5;box-shadow:0 -6px 25px #3027200a}
+.privacy-banner .cookie-bar-copy{flex:1;min-width:0}
+.privacy-banner p{margin:0;font-size:13px;line-height:1.7;color:#493b32}
+.privacy-banner .cookie-bar-copy a{text-decoration:underline;text-underline-offset:4px;margin-left:8px;white-space:nowrap}
+.privacy-banner .privacy-actions{flex:0 0 auto;gap:10px}
+.privacy-banner .privacy-actions button{flex:0 0 auto;min-width:105px;min-height:44px;padding:11px 17px;font-size:12px;background:transparent;color:#493b32;border:1px solid #493b32}
+.privacy-banner .privacy-actions [data-accept],.privacy-banner .privacy-actions [data-reject]{background:#493b32;color:#fff}
+.privacy-banner .privacy-actions button:hover{background:#e8ddd0;color:#493b32}
+@media(max-width:700px){.privacy-banner{display:flex;flex-direction:column;align-items:stretch;gap:14px;padding:17px 20px max(17px,env(safe-area-inset-bottom))}.privacy-banner p{font-size:12px;line-height:1.65}.privacy-banner .privacy-actions{display:grid;grid-template-columns:1fr 1.15fr 1.15fr;gap:7px}.privacy-banner .privacy-actions button{min-width:0;padding:10px 6px;font-size:11px}}
+/* Compact revision requested for preview. */
+.privacy-banner{gap:20px;padding:7px 3vw}
+.privacy-banner p{font-size:12px;line-height:1.5}
+.privacy-banner .privacy-actions{gap:8px}
+.privacy-banner .privacy-actions button{min-height:40px;min-width:96px;padding:8px 13px;font-size:11px}
+@media(max-width:700px){.privacy-banner{gap:8px;padding:9px 14px max(9px,env(safe-area-inset-bottom))}.privacy-banner p{font-size:11px;line-height:1.45}.privacy-banner .privacy-actions button{min-height:44px;padding:7px 5px;font-size:11px}}
