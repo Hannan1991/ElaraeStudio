@@ -1,0 +1,31 @@
+/* Editorial portfolio refinement; retain all media and gallery interactions. */
+#portfolio{padding-top:76px;padding-bottom:80px}
+#portfolio>.section-head{margin-bottom:30px;max-width:760px}
+#portfolio>.section-head h2{font-size:clamp(40px,4.8vw,65px);line-height:1.08;margin-top:13px}
+#portfolio .portfolio-intro{max-width:47ch;margin-top:14px;font-size:14px}
+#portfolio>.section-kicker{top:88px}
+#portfolio .project-list{gap:66px}
+#portfolio .portfolio-project,#portfolio #elyra-shop.portfolio-project{align-items:start}
+#portfolio .pf-info{padding-top:35px}
+#portfolio .pf-info h3{margin:11px 0 14px}
+#portfolio .pf-description{max-width:36ch;line-height:1.75}
+#portfolio .pf-gallery{padding:12px!important;gap:0 14px}
+#portfolio .pf-item{padding:0}
+#portfolio .pf-surface{background:#eee7dd}
+#portfolio .pf-caption{min-height:2.8em;font-size:12px;line-height:1.5;max-width:55ch}
+#portfolio .pf-gallery-footer{gap:8px;padding-top:12px}
+#portfolio .pf-thumbs{gap:8px;padding:3px 2px 7px}
+#portfolio .pf-thumb{min-width:56px;height:44px;opacity:.8;border-color:#49312725}
+#portfolio .pf-thumb.active{opacity:1;border-color:#493b32}
+#portfolio .pf-thumb:hover{opacity:1}
+#portfolio .pf-arrow,#portfolio .pf-expand{background:#f8f4edeb;box-shadow:none;border-color:#493b3228;color:#493b32}
+#portfolio .pf-arrow:hover,#portfolio .pf-expand:hover{background:#f8f4ed;border-color:#493b3270}
+#portfolio .pf-counts{font-size:11px;color:#76685c}
+#portfolio .pf-case-link{font-size:10px;letter-spacing:.02em;white-space:normal}
+#portfolio .pf-case-link span{transition:transform .3s}
+#portfolio .pf-case-link:hover span{transform:translate(2px,-2px)}
+@media(min-width:1200px){#portfolio .pf-info{padding-top:42px}}
+@media(max-width:900px){#portfolio .pf-info{padding-top:24px}#portfolio .pf-description{font-size:13px}#portfolio .pf-gallery{padding:10px!important}}
+@media(max-width:650px){#portfolio{padding-top:48px;padding-bottom:48px}#portfolio>.section-head{margin-bottom:30px}#portfolio>.section-head h2{font-size:40px}#portfolio>.section-kicker{top:60px}#portfolio .project-list{gap:44px}#portfolio .pf-info{padding-top:0}#portfolio .portfolio-project,#portfolio #elyra-shop.portfolio-project{gap:16px}#portfolio .pf-info h3{margin:8px 0 10px}#portfolio .pf-description{font-size:14px;max-width:100%}#portfolio .pf-gallery{padding:10px!important}#portfolio .pf-caption{min-height:2.8em;font-size:12px}#portfolio .pf-thumbs{gap:8px;scroll-padding-inline:2px}#portfolio .pf-thumb{width:52px;min-width:52px;height:44px}#portfolio .pf-prev{left:6px}#portfolio .pf-next{right:6px}#portfolio .pf-expand{top:6px;right:6px}#portfolio .pf-case-link{font-size:10px;letter-spacing:0;padding:10px 12px}#portfolio .pf-counts{font-size:10px}}
+@media(prefers-reduced-motion:reduce){#portfolio .pf-case-link span{transition:none}}
+#portfolio .pf-gallery{overflow:hidden}

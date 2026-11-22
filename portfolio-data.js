@@ -4,7 +4,7 @@ window.ELARAE_PROJECTS = [
     "number": "01",
     "name": "Élan Nail Studio",
     "sector": "Beauty & wellness",
-    "description": "Een rustige merkidentiteit, doorvertaald naar website, sociale content en drukwerk.",
+    "description": "Behandelingen en afspraakmogelijkheden krijgen een duidelijke plek. Dezelfde visuele signatuur verbindt de website met sociale content en drukwerk.",
     "caseUrl": "elan-nail-studio.html",
     "tone": "#e9dfd3",
     "media": [
@@ -59,7 +59,7 @@ window.ELARAE_PROJECTS = [
     "number": "02",
     "name": "Urban Bites",
     "sector": "Food & hospitality",
-    "description": "Een herkenbaar foodconcept met een scanbaar aanbod en samenhangende merktoepassingen.",
+    "description": "Een scanbaar menu brengt het aanbod snel in beeld. Productfotografie en duidelijke categorieën ondersteunen de keuze.",
     "caseUrl": "urban-bites.html",
     "tone": "#e5dfd2",
     "media": [
@@ -105,7 +105,7 @@ window.ELARAE_PROJECTS = [
     "number": "03",
     "name": "Lumora Coaching",
     "sector": "Coaching & wellbeing",
-    "description": "Een warme visuele richting die aanbod, kennismaking en werkmaterialen bij elkaar brengt.",
+    "description": "Aanbod, begeleiding en kennismaking volgen een heldere volgorde. Een rustige vormgeving geeft de inhoud ruimte en maakt de volgende stap herkenbaar.",
     "caseUrl": "lumora-coaching.html",
     "tone": "#dedbd2",
     "media": [
@@ -158,7 +158,7 @@ window.ELARAE_PROJECTS = [
     "number": "04",
     "name": "ELYRA GLOSS",
     "sector": "Beauty & 3D webdesign",
-    "description": "Visuele identiteit, interactieve storytelling en productontdekking binnen één digitale omgeving.",
+    "description": "Bewegende producten trekken de aandacht; informatie en winkelacties blijven binnen dezelfde ervaring. Zo versterken merkpresentatie en bediening elkaar.",
     "caseUrl": "elyra-gloss.html",
     "tone": "#e9ded4",
     "media": [
@@ -166,7 +166,7 @@ window.ELARAE_PROJECTS = [
         "type": "video",
         "src": "assets/elyra-gloss/ELYRA-Gloss-Showcase-Portfolio.mp4",
         "poster": "assets/elyra-gloss/ELYRA-Gloss-Thumbnail.jpg",
-        "caption": "De interactieve merkervaring · 22 seconden",
+        "caption": "Showcase · ELYRA GLOSS",
         "alt": "ELYRA GLOSS — interactieve showcase"
       },
       {
@@ -201,7 +201,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/gloss-mobile-home.webp",
         "alt": "De mobiele homepage",
-        "caption": "Een heldere eerste stap op mobiel.",
+        "caption": "Een heldere eerste stap op mobiel",
         "layout": "pair",
         "pair": "assets/cases/gloss-mobile-product.webp"
       },
@@ -209,7 +209,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/gloss-mobile-product.webp",
         "alt": "De mobiele productervaring",
-        "caption": "Kiezen en bevestigen blijven binnen bereik.",
+        "caption": "Kiezen en bevestigen blijven binnen bereik",
         "layout": "pair",
         "pair": "assets/cases/gloss-mobile-home.webp"
       }
@@ -220,7 +220,7 @@ window.ELARAE_PROJECTS = [
     "number": "05",
     "name": "Elyra Shop",
     "sector": "E-commerce & UX",
-    "description": "Een digitale winkelervaring waarin productontdekking, keuze en bevestiging samenkomen.",
+    "description": "Model- en kleurkeuze blijven verbonden met beeld en productinformatie. Bezoekers herkennen hun selectie tijdens het vergelijken en verdiepen.",
     "caseUrl": "elyra-shop.html",
     "tone": "#e9ded4",
     "media": [
@@ -228,56 +228,56 @@ window.ELARAE_PROJECTS = [
         "type": "video",
         "src": "assets/cases/shop-showcase.mp4?v=wide-20261118",
         "poster": "assets/cases/shop-video-cover.png",
-        "caption": "De winkelervaring · 15 seconden",
+        "caption": "Showcase · Elyra Shop",
         "alt": "Elyra Shop — showcase"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-campaign-product.webp",
         "alt": "De volledige productervaring met campagne, modelkeuze en galerij",
-        "caption": "Oriëntatie, vergelijking en actie in één context.",
+        "caption": "Oriëntatie, vergelijking en actie in één context",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-home.webp",
         "alt": "De homepage en de ingang naar het aanbod",
-        "caption": "Een duidelijke ingang vóór de eerste keuze.",
+        "caption": "Een duidelijke ingang vóór de eerste keuze",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-stone-case.webp",
         "alt": "De productpagina met Stone geselecteerd",
-        "caption": "Elke weergave bevestigt dezelfde selectie.",
+        "caption": "Elke weergave bevestigt dezelfde selectie",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-mocha-brown-case.webp",
         "alt": "Dezelfde productpagina in Mocha Brown",
-        "caption": "Een andere keuze, dezelfde vertrouwde bediening.",
+        "caption": "Een andere keuze, dezelfde vertrouwde bediening",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-collection.webp",
         "alt": "Het productoverzicht ondersteunt vergelijken",
-        "caption": "Een vaste rangorde maakt vergelijken eenvoudiger.",
+        "caption": "Een vaste rangorde maakt vergelijken eenvoudiger",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-detail.webp",
         "alt": "Een detail onderzoeken binnen dezelfde context",
-        "caption": "Verdiepen zonder de gemaakte keuze te verliezen.",
+        "caption": "Verdiepen zonder de gemaakte keuze te verliezen",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/shop-mobile-home.webp",
         "alt": "De mobiele homepage",
-        "caption": "Een heldere eerste stap op mobiel.",
+        "caption": "Een heldere eerste stap op mobiel",
         "layout": "pair",
         "pair": "assets/cases/shop-mobile-product.webp"
       },
@@ -285,7 +285,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/shop-mobile-product.webp",
         "alt": "De mobiele productervaring",
-        "caption": "Kiezen en bevestigen blijven binnen bereik.",
+        "caption": "Kiezen en bevestigen blijven binnen bereik",
         "layout": "pair",
         "pair": "assets/cases/shop-mobile-home.webp"
       }
@@ -296,7 +296,7 @@ window.ELARAE_PROJECTS = [
     "number": "06",
     "name": "Aureon Construct",
     "sector": "Website Design · UX/UI · Development · Motion Design",
-    "description": "Voor Aureon Construct komen vakmanschap, architectuur en een heldere gebruikerservaring samen. Website en film vertellen één verhaal, met aandacht voor materiaal, beweging en detail.",
+    "description": "Werkbeelden tonen de uitvoering; de voor-en-na-vergelijking maakt verandering zichtbaar. Diensten en projectverhalen begeleiden de bezoeker naar een gericht gesprek.",
     "caseUrl": "aureon-construct.html",
     "tone": "#deddd3",
     "media": [
@@ -311,49 +311,49 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/aureon/home.webp",
         "alt": "AUREON CONSTRUCT — Een eerste indruk met rust en richting.",
-        "caption": "Een eerste indruk met rust en richting.",
+        "caption": "Een eerste indruk met rust en richting",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/work.webp",
         "alt": "AUREON CONSTRUCT — Het werk wordt zichtbaar tijdens het scrollen.",
-        "caption": "Het werk wordt zichtbaar tijdens het scrollen.",
+        "caption": "Het werk wordt zichtbaar tijdens het scrollen",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/services.webp",
         "alt": "AUREON CONSTRUCT — Diensten op één herkenbare manier gepresenteerd.",
-        "caption": "Diensten op één herkenbare manier gepresenteerd.",
+        "caption": "Diensten op één herkenbare manier gepresenteerd",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/beforeafter.webp",
         "alt": "AUREON CONSTRUCT — Dezelfde ruimte, een zichtbaar verschil.",
-        "caption": "Dezelfde ruimte, een zichtbaar verschil.",
+        "caption": "Dezelfde ruimte, een zichtbaar verschil",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/process.webp",
         "alt": "AUREON CONSTRUCT — Een heldere route van kennismaking naar afwerking.",
-        "caption": "Een heldere route van kennismaking naar afwerking.",
+        "caption": "Een heldere route van kennismaking naar afwerking",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/detail.webp",
         "alt": "AUREON CONSTRUCT — Van de opbouw tot de afgewerkte wand.",
-        "caption": "Van de opbouw tot de afgewerkte wand.",
+        "caption": "Van de opbouw tot de afgewerkte wand",
         "layout": "single"
       },
       {
         "type": "image",
         "src": "assets/cases/aureon/mobile-home.webp",
         "alt": "AUREON CONSTRUCT — De mobiele homepage.",
-        "caption": "De mobiele homepage.",
+        "caption": "De mobiele homepage",
         "layout": "pair",
         "pair": "assets/cases/aureon/mobile-service-cormorant.webp"
       },
@@ -361,7 +361,7 @@ window.ELARAE_PROJECTS = [
         "type": "image",
         "src": "assets/cases/aureon/mobile-service-cormorant.webp",
         "alt": "AUREON CONSTRUCT — De mobiele dienstenervaring.",
-        "caption": "De mobiele dienstenervaring.",
+        "caption": "De mobiele dienstenervaring",
         "layout": "pair",
         "pair": "assets/cases/aureon/mobile-home.webp"
       }
