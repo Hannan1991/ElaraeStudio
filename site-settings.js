@@ -1,6 +1,6 @@
 window.ELARAE_SETTINGS = Object.freeze({
   canonicalOrigin: 'https://elaraestudio.be',
-  contactEmail: 'elarae.studio@hotmail.com',
+  contactEmail: 'contact@elaraestudio.be',
   studioStatus: 'in-opbouw',
   whatsappNumber: '32488012839',
   tagManagerId: 'GTM-W2MCKS2L',

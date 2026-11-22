@@ -2,6 +2,14 @@
   'use strict';
   const settings = window.ELARAE_SETTINGS;
   const manifest = window.ELARAE_MEDIA || {};
+  // One contact setting supplies every mail link, including legal pages.
+  document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+    const original = a.getAttribute('href');
+    const address = original.slice(7).split('?')[0];
+    const suffix = original.includes('?') ? original.slice(original.indexOf('?')) : '';
+    a.href = 'mailto:' + settings.contactEmail + suffix;
+    if (a.textContent.trim() === address) a.textContent = settings.contactEmail;
+  });
   document.querySelectorAll('.whatsapp').forEach(a => { const u = new URL(a.href); u.pathname = '/' + settings.whatsappNumber; a.href = u.href; });
   const key = 'elarae-privacy-v1';
   const blank = () => ({ analytics: false, external: false });
@@ -127,8 +135,8 @@
   document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', () => {
     if (details.open) details.querySelectorAll('video').forEach(v => {
       if (v.dataset.poster) { const m = lookup(v.dataset.poster); v.poster = m ? m.src : v.dataset.poster; delete v.dataset.poster; }
-      v.addEventListener('pointerdown', () => prepareVideo(v), { once: true });
-      v.addEventListener('keydown', () => prepareVideo(v), { once: true });
+      v.preload = 'metadata';
+      prepareVideo(v);
     });
     else details.querySelectorAll('video').forEach(v => v.pause());
   }));
