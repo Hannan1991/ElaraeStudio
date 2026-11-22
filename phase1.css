@@ -57,3 +57,29 @@ footer .privacy-settings-link{justify-self:start;color:inherit;font-size:11px}
 #portfolio .pf-gallery-footer .pf-caption{color:#69594b!important}
 /* Preserve the natural product ratio when explicit image dimensions are present. */
 .featured-hero .tube{width:auto}
+
+/* Final Phase 1 composition refinements: existing content, one legal group. */
+footer .footer-legal-links{grid-column:1/-1;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 24px;margin:0;padding:12px 0;font-size:10px;line-height:1.5}
+footer .footer-legal-links a,footer .footer-legal-links .privacy-settings-link{display:inline-flex;align-items:center;min-height:36px;padding:6px 0;border:0;border-bottom:1px solid currentColor;color:inherit;background:transparent;font:inherit;letter-spacing:.08em;text-transform:uppercase;text-underline-offset:4px;cursor:pointer}
+footer .footer-legal-links a:focus-visible,footer .footer-legal-links .privacy-settings-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.case-footer .footer-legal-links{flex-basis:100%}
+.intro .intro-signature{align-items:center;justify-content:center;gap:26px}
+.intro .intro-logo{align-self:center;object-position:center}
+.intro .intro-ticker{width:100%;max-width:320px;padding-top:22px}
+.intro .intro-ticker-track{justify-content:center}
+.intro .intro-ticker-set{align-items:center;gap:12px}
+.intro .ticker-item{display:flex;justify-content:flex-start;min-width:146px}
+.contact .contact-intro .contact-expectation{font-size:12px;line-height:1.7;letter-spacing:0;max-width:43ch;color:#6f6258;margin:25px 0 0}
+@media(max-width:700px){
+ .featured-hero .exhibition{gap:18px;padding-top:20px}
+ .featured-hero .eyebrow{margin-bottom:0}
+ .featured-hero .project-navigation{order:-2;margin:0;padding-top:12px;max-width:none;width:100%}
+ .featured-hero .stage{height:clamp(220px,calc(100svh - 320px),390px);min-height:0}
+}
+@media(max-width:650px){
+ .intro .intro-signature{justify-self:center;max-width:320px;gap:22px}
+ .intro .intro-logo{object-position:center}
+ .intro .intro-ticker{max-width:280px;padding-top:18px}
+ footer .footer-legal-links{gap:4px 18px;padding:6px 0}
+}
+@media(max-width:700px){.featured-hero{position:relative;z-index:9}}
