@@ -56,7 +56,9 @@
       if (!isIntersecting) return;
       if (target.tagName === 'VIDEO' && target.dataset.poster && !target.closest('details:not([open])')) {
         const entry = lookup(target.dataset.poster); target.poster = entry ? entry.src : target.dataset.poster;
-        delete target.dataset.poster; mediaObserver.unobserve(target);
+        delete target.dataset.poster;
+        if (target.id !== 'aureon' && target.id !== 'fruit') { target.preload = 'metadata'; prepareVideo(target); }
+        mediaObserver.unobserve(target);
       }
     });
   }, { rootMargin: '200px' });
@@ -131,7 +133,16 @@
   window.addEventListener('storage', e => { if (e.key === key) location.reload(); });
   applyChoice();
   observeMedia();
-  document.querySelectorAll('video:not(#aureon):not(#fruit)').forEach(v => { const load = () => prepareVideo(v); v.addEventListener('pointerdown',load,{once:true});v.addEventListener('keydown',load,{once:true}); });
+  document.querySelectorAll('video:not(#aureon):not(#fruit)').forEach(v => {
+    v.playsInline = true;
+    const prepare = () => { v.preload = 'metadata'; prepareVideo(v); };
+    v.addEventListener('focus', prepare, { once: true });
+    v.addEventListener('pointerenter', prepare, { once: true });
+    v.addEventListener('click', () => {
+      const pending = !!(v.dataset.videoSrc || v.dataset.src || v.querySelector('source[data-src]'));
+      if (pending) { prepare(); v.play().catch(() => {}); }
+    });
+  });
   document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', () => {
     if (details.open) details.querySelectorAll('video').forEach(v => {
       if (v.dataset.poster) { const m = lookup(v.dataset.poster); v.poster = m ? m.src : v.dataset.poster; delete v.dataset.poster; }
