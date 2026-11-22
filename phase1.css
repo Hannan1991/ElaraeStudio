@@ -91,3 +91,11 @@ footer .footer-legal-links a:focus-visible,footer .footer-legal-links .privacy-s
  .featured-hero .discuss:after{display:none}
  .featured-hero #case-link{align-self:flex-start;min-height:44px}
 }
+/* Keep both signature lines readable without scrolling on mobile. */
+@media(max-width:650px){
+ footer .footer-marquee{overflow:visible;white-space:normal;text-align:center}
+ footer .marquee-track{width:100%;justify-content:center}
+ footer .marquee-track>span:not([aria-hidden=true]){display:flex;flex-direction:column;flex:1 1 100%;width:100%;min-width:0;gap:7px;padding:0;font-size:11px;line-height:1.8;letter-spacing:.07em;text-align:center}
+ footer .marquee-track .footer-star{display:none}
+}
+.footer-signature-line{font:inherit;color:inherit}
