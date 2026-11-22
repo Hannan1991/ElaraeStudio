@@ -1,0 +1,57 @@
+/* Engineering refinements only: retain the established art direction. */
+:root{--accessible-muted:#756353}
+.skip-link{position:fixed;left:16px;top:-90px;z-index:1000;padding:12px 18px;background:#493b32;color:#fffaf2;border:2px solid #fffaf2;font:14px 'DM Sans',Arial,sans-serif}
+.skip-link:focus{top:12px}
+main:focus{outline:none}
+body{--muted:#6f6258}
+.eyebrow,.section-kicker,.pf-meta,.pf-counts,.portfolio-project .pf-position,.featured-hero .eyebrow,.featured-hero .project-meta,.featured-hero .interaction,.featured-hero .next-info span,.term-no,.term-copy .micro,.toc-title,.term-section .term-no{color:#756353}
+.case-section:not(.outcome) .section-index,.case-meta dt,.case-meta dd,.case-footer small,.case-legacy .eyebrow,.case-gloss .eyebrow,.case-shop .eyebrow,.case-aureon .eyebrow{color:#756353}
+.outcome .eyebrow,.outcome .section-index{color:#eadfd4}
+.featured-hero #project-number{color:#302720}
+.featured-hero .hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1;pointer-events:none}
+.featured-hero .is-playing .hero-poster{visibility:hidden}
+.featured-hero .aureon-detail{z-index:2}
+.intro-ticker-track,.marquee-track{animation:none!important;transform:none!important}
+.intro-ticker-track{width:100%!important}
+.intro-ticker-set{flex-basis:100%!important;width:100%!important}
+.intro-ticker-set[aria-hidden=true],.marquee-track>span[aria-hidden=true]{display:none}
+.contact-expectation{font-size:13px;line-height:1.7;max-width:47ch;color:#6f6258}
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden}
+.map-consent{position:relative;min-height:260px;display:grid;place-items:center;background:#e4dacb}
+.map-consent iframe{width:100%;height:100%;min-height:260px;border:0}
+.map-consent [hidden]{display:none}
+.map-consent-copy{padding:28px;max-width:410px;color:#493b32;font:13px/1.7 'DM Sans',Arial,sans-serif}
+.map-consent-copy button{min-height:44px;padding:9px 0;border:0;border-bottom:1px solid #927e6d;background:transparent;color:#493b32;font:inherit;cursor:pointer}
+.privacy-banner,.privacy-dialog{font-family:'DM Sans',Arial,sans-serif;color:#302720;background:#f6f2eb;border:1px solid #b9a997;box-shadow:0 14px 45px #30272024}
+.privacy-banner{position:fixed;right:24px;bottom:24px;z-index:100;max-width:440px;padding:24px}
+.privacy-banner[hidden]{display:none}
+.privacy-banner h2,.privacy-dialog h2{font:400 27px/1.2 'Playfair Display',Georgia,serif;letter-spacing:-.02em;margin:0 0 13px}
+.privacy-banner p,.privacy-dialog p{font:13px/1.7 'DM Sans',Arial,sans-serif;margin:0 0 17px;color:#5e4e41}
+.privacy-actions{display:flex;gap:10px;align-items:stretch}
+.privacy-actions button{flex:1;min-height:44px;border:1px solid #493b32;padding:10px;background:transparent;color:#493b32;font:12px/1.4 'DM Sans',Arial,sans-serif;cursor:pointer}
+.privacy-actions button:hover{background:#e9e0d5}
+.privacy-links{display:flex;gap:24px;align-items:center;margin-top:14px}
+.privacy-links a,.privacy-links button,.privacy-settings-link{font:12px/1.4 'DM Sans',Arial,sans-serif;color:inherit;background:transparent;border:0;border-bottom:1px solid currentColor;padding:7px 0;cursor:pointer;min-height:36px;text-transform:none;letter-spacing:0}
+.privacy-dialog{width:min(530px,calc(100% - 36px));padding:30px;max-height:85dvh}
+.privacy-dialog::backdrop{background:#30272075}
+.privacy-dialog label{display:flex;align-items:center;gap:12px;font-size:14px;margin:16px 0;min-height:44px}
+.privacy-dialog input{width:20px;height:20px;accent-color:#493b32}
+.privacy-dialog a{text-decoration:underline;text-underline-offset:3px}
+.privacy-explanation{border-top:1px solid #b9a997;padding-top:17px!important}
+.privacy-dialog button:focus-visible,.privacy-banner button:focus-visible,.privacy-settings-link:focus-visible{outline:2px solid #493b32;outline-offset:4px}
+footer .privacy-settings-link{justify-self:start;color:inherit;font-size:11px}
+@media(max-width:650px){.privacy-banner{left:12px;right:12px;bottom:12px;max-width:none;padding:20px}.privacy-banner h2{font-size:25px}.privacy-dialog{padding:24px}.map-consent{min-height:220px}}
+
+/* Muted text keeps its warm hue while passing AA on the existing surfaces. */
+.portfolio-project .pf-counts,.portfolio-project .pf-caption{color:#69594b}
+.sofia .section-kicker,.sofia .eyebrow,.inspiration .section-kicker,.inspiration .eyebrow,.location-copy .eyebrow{color:#6b5949}
+.sofia-content p,.inspiration-copy>p:not(.eyebrow),.location-copy>p:not(.eyebrow){color:#65584b}
+.sofia h2 em,.inspiration h2 em{color:#897463}
+.package-body .package-sub{color:#716357}
+.case-section:not(.outcome) .section-index,.screen figcaption,.mobile-stage figcaption{color:#69594b}
+.terms-page .terms-meta span,.terms-page .terms-toc b,.terms-page .toc b,.terms-page .terms-updated{color:#6b5949}
+.phase1-legal{font-size:11px;line-height:1.8;color:inherit;grid-column:1/-1}
+.phase1-legal a{text-underline-offset:4px}
+.meta-card .micro,.toc .toc-list b{color:#6b5949}
+#portfolio .pf-gallery .pf-counts,#portfolio .pf-gallery .pf-caption{color:#69594b}body .sofia-content>p:not(.eyebrow){color:#65584b}
+#portfolio .pf-gallery-footer .pf-caption{color:#69594b!important}
