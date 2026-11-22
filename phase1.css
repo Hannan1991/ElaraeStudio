@@ -55,3 +55,5 @@ footer .privacy-settings-link{justify-self:start;color:inherit;font-size:11px}
 .meta-card .micro,.toc .toc-list b{color:#6b5949}
 #portfolio .pf-gallery .pf-counts,#portfolio .pf-gallery .pf-caption{color:#69594b}body .sofia-content>p:not(.eyebrow){color:#65584b}
 #portfolio .pf-gallery-footer .pf-caption{color:#69594b!important}
+/* Preserve the natural product ratio when explicit image dimensions are present. */
+.featured-hero .tube{width:auto}
