@@ -1,0 +1,5 @@
+/* Keep existing frame dimensions; adapt the new source portrait within them. */
+.sofia-image>img{aspect-ratio:1122/1402;object-fit:cover;object-position:50% 30%}
+.sf-portrait img{object-position:50% 32%}
+.sf-profile img{height:auto;aspect-ratio:1/1.12;object-position:50% 30%}
+@media(max-width:650px){.sf-portrait img{object-position:50% 42%}.sf-profile img{height:70px}}
