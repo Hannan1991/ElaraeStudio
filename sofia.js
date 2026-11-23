@@ -25,7 +25,7 @@
  document.fonts.ready.then(fitQuestionCards);
  function choices(labels,callback,compact=false){
   chips.classList.remove('sf-question-cards');chips.style.height='';chips.replaceChildren();chips.classList.remove('is-expanded');chips.dataset.menu=String(compact);
-  labels.forEach((label,i)=>{const b=element('button',compact&&i>=3?'sf-secondary-question':'',label,chips);b.type='button';if(compact){b.classList.add('sf-question-card');b.setAttribute('aria-label',label);b.dataset.icon=({'Waarmee helpen jullie?':'💡','Hoe verloopt een project?':'🚀','Wat kost een website?':'💰'})[label]||'↗';}b.addEventListener('click',e=>{focusChoices=e.detail===0;callback(label,i);});});
+  labels.forEach((label,i)=>{const b=element('button',compact&&i>=3?'sf-secondary-question':'',label,chips);b.type='button';if(compact){b.classList.add('sf-question-card');b.setAttribute('aria-label',label);}b.addEventListener('click',e=>{focusChoices=e.detail===0;callback(label,i);});});
   if(compact&&labels.length>3){const more=element('button','sf-more-questions','Meer onderwerpen',chips);more.type='button';more.setAttribute('aria-expanded','false');more.addEventListener('click',e=>{const expanded=chips.classList.toggle('is-expanded');more.setAttribute('aria-expanded',String(expanded));more.textContent=expanded?'Minder onderwerpen':'Meer onderwerpen';if(expanded&&e.detail===0)chips.querySelector('.sf-secondary-question')?.focus({preventScroll:true});});}
   fitQuestionCards();
   if(focusChoices){chips.querySelector('button')?.focus({preventScroll:true});focusChoices=false;}
