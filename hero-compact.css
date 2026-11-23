@@ -1,0 +1,19 @@
+/* Approved compact hero. Keep sources, width, shape and motion unchanged. */
+.featured-hero .stage{height:min(544px,calc(80svh - 142px));min-height:448px}
+.featured-hero .stage.aureon .panel>video,.featured-hero .stage.aureon.wide-result .panel>video{width:100%;height:100%;object-fit:cover;object-position:center}
+@media(min-width:701px){
+ .featured-hero .exhibition{padding-top:32px;padding-bottom:20px}
+ .featured-hero .context{padding:0}
+ .featured-hero .eyebrow{margin-bottom:16px}
+ .featured-hero h1{margin-bottom:20px}
+ .featured-hero .hero-offer{margin-bottom:16px}
+ .featured-hero .project-context{min-height:0}
+ .featured-hero .project-meta{margin-bottom:9px}
+ .featured-hero h2{margin-bottom:9px}
+ .featured-hero .statement{margin-bottom:8px}
+ .featured-hero .project-context .description{min-height:0;margin-bottom:10px}
+ .featured-hero .project-context .interaction{min-height:0;margin-bottom:12px}
+ .featured-hero .project-navigation{margin-top:16px;padding-top:14px}
+ .featured-hero .discuss{margin-top:14px}
+}
+@media(max-width:700px){.featured-hero .stage{height:312px;min-height:0}.featured-hero .exhibition{padding-top:22px;padding-bottom:18px}}
