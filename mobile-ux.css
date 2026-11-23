@@ -1,0 +1,79 @@
+/* Mobile-only spacing and flow. Desktop styles and motion remain unchanged. */
+@media(max-width:650px){
+ /* Less empty section padding, with the existing typography preserved. */
+ #studio,.sofia.section,#pakketten,#wereld,#contact{padding-top:44px;padding-bottom:44px}
+ #studio{gap:24px}
+ .sofia.section{gap:28px}
+ #portfolio{padding-top:36px;padding-bottom:36px}
+ #portfolio .project-list{gap:36px}
+ #portfolio>.section-head{margin-bottom:24px}
+ #portfolio .pf-info h3{margin-bottom:8px}
+ #portfolio .pf-gallery-footer{padding-top:9px;gap:8px}
+ #portfolio .portfolio-more{margin-top:28px;padding-top:16px}
+ .contact-grid{gap:24px}
+ #contactForm{gap:16px}
+ #contactForm input:not([type=checkbox]),#contactForm select,#contactForm textarea{font-size:16px}
+ #contactForm .privacy-check{min-height:44px;align-items:center}
+ #contactForm .button{margin-top:8px;min-height:44px}
+ #contactForm .form-note:empty{display:none}
+ .contact-location{margin-top:30px;gap:18px}
+ .header nav.open{padding-top:18px;padding-bottom:20px;gap:8px}
+ .header nav.open>a{min-height:44px;display:flex;align-items:center}
+ /* A conversation grows with its content, then scrolls rather than stretching. */
+ .ambassador-page .sf-hero{padding-top:24px;padding-bottom:24px;gap:20px}
+ .ambassador-page .sf-experience{padding-top:28px;padding-bottom:28px}
+ .ambassador-page .sf-section-head{margin-bottom:18px}
+ .ambassador-page .sf-brands{margin-bottom:12px}
+ .ambassador-page .sf-profile{padding:12px 14px}
+ .ambassador-page .sf-tools{padding:5px 14px}
+ .ambassador-page .sf-role-panel{padding-top:9px}
+ .ambassador-page .sf-role-note{margin-top:8px}
+ .ambassador-page .sf-log{height:auto;min-height:0;max-height:min(32svh,250px);padding:12px 14px;gap:8px}
+ .ambassador-page .sf-message{flex-shrink:0;padding:10px 12px}
+ .ambassador-page .sf-message>.sf-link{display:flex;width:fit-content;max-width:100%;margin-top:10px;white-space:normal;min-height:44px}
+ .ambassador-page .sf-message>.sf-button{display:flex;width:fit-content;max-width:100%;margin-top:10px;white-space:normal}
+ .ambassador-page .sf-chips{padding:0 14px 10px;gap:5px}
+ .ambassador-page .sf-chips button{padding:7px 9px;min-height:44px}
+ .ambassador-page .sf-input{padding:9px 14px;gap:7px}
+ .ambassador-page .sf-demo-note{margin-top:12px}
+ .ambassador-page .sf-applications{padding-top:28px;padding-bottom:28px}
+ .ambassador-page .sf-world-intro .sf-sector-subtitle{margin:16px 0 10px}
+ .ambassador-page .sf-world-intro .sf-sector-intro{margin-bottom:0}
+ .ambassador-page .sf-sector-showcase{margin-top:22px;gap:14px;margin-bottom:20px;--world-height:clamp(250px,70vw,290px)}
+ /* Natural rows remove the fixed 820px panel and fixed text coordinates. */
+ .ambassador-page .sf-sector-showcase .sf-sector-grid{min-height:0}
+ .ambassador-page .sf-sector-showcase .sf-sector{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:var(--world-height) auto auto auto;min-height:0;padding:0 20px 22px}
+ .ambassador-page .sf-sector-world-frame{height:var(--world-height)}
+ .ambassador-page .sf-sector-concept-label{top:calc(var(--world-height) - 28px);left:23px}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-promise{position:relative;grid-column:1;grid-row:2;top:auto;left:auto;right:auto;margin:21px 0 12px}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-outcome{position:relative;grid-column:1;grid-row:3;top:auto;left:auto;width:auto;max-width:none;margin:0 0 16px;padding:0}
+ .ambassador-page .sf-sector-dialogue{position:relative;grid-column:1;grid-row:4;top:auto;left:auto;right:auto;bottom:auto;margin:0;padding-top:15px}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-question{margin-bottom:15px}
+ .ambassador-page .sf-sector-speaker{margin-bottom:8px}
+ .ambassador-page .sf-sector-controls{padding-top:12px}
+ .ambassador-page .sf-delivery{margin:28px 0 22px;padding-top:24px}
+ .ambassador-page .sf-delivery-intro{margin-bottom:20px}
+ .ambassador-page .sf-delivery-list article{padding:18px 0;gap:10px}
+ .ambassador-page .sf-details{margin-top:14px}
+ .ambassador-page .sf-details summary{padding:13px 0;min-height:50px}
+ .ambassador-page .sf-details details p{margin-bottom:17px}
+ .ambassador-page .sf-ending{padding-top:28px;padding-bottom:28px}
+ .ambassador-page .sf-ending .sf-button{margin-top:20px}
+ /* Case studies retain their images and copy, with tighter transitions. */
+ .case-hero{padding-top:28px;padding-bottom:24px}
+ .case-hero>.eyebrow{margin-bottom:14px}
+ .case-hero h1{margin-bottom:20px}
+ .case-hero .hero-summary{gap:16px}
+ .case-meta{gap:16px;margin-top:4px}
+ .case-meta dd{margin-top:5px}
+ .jump-nav{margin-top:24px;padding-top:15px;gap:12px 16px}
+ .case-section{padding-top:28px;padding-bottom:28px}
+ .case-section .section-intro{gap:12px;margin-bottom:20px}
+ .case-section .section-copy h2{margin-bottom:16px}
+ .case-section .design-notes{margin-top:20px;gap:16px}
+ .case-section .design-notes h3{margin-bottom:8px}
+ .case-section .screen figcaption{margin-top:12px}
+ .case-section .split-screens{gap:18px}
+ .case-section .service-grid{gap:22px}
+ .case-footer{padding-top:28px;padding-bottom:28px}
+}
