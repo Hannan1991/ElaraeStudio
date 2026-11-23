@@ -10,7 +10,7 @@
  function element(tag,cls,text,parent){const el=document.createElement(tag);if(cls)el.className=cls;if(text)el.textContent=text;if(parent)parent.append(el);return el;}
  function message(text,user=false){const el=element('div','sf-message'+(user?' sf-user':''),contactText(text),log);log.scrollTop=log.scrollHeight;return el;}
  function choices(labels,callback){chips.replaceChildren();labels.forEach((label,i)=>{const b=element('button','',label,chips);b.type='button';b.addEventListener('click',e=>{focusChoices=e.detail===0;callback(label,i);});});if(focusChoices){chips.querySelector('button')?.focus({preventScroll:true});focusChoices=false;}}
- function ready(){form.querySelector('button').disabled=false;input.disabled=false;find('#sf-status').textContent='Demonstratie · tekst';log.setAttribute('aria-busy','false');}
+ function ready(){form.querySelector('button').disabled=false;input.disabled=false;find('#sf-status').textContent='Merkervaring · voorbeeld';log.setAttribute('aria-busy','false');}
  function respond(text,after,link){
   const token=++generation;clearTimeout(timer);chips.replaceChildren();form.querySelector('button').disabled=true;
   log.setAttribute('aria-busy','true');find('#sf-status').textContent='Antwoord wordt klaargezet';
