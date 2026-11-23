@@ -5,7 +5,7 @@ window.SOFIA_CONTENT = Object.freeze({
    {q:'Waarmee helpen jullie?',keys:['diensten','aanbod','doen'],a:'Elarae Studio brengt branding, websites, webshops en content samen in één herkenbare merkwereld. We stemmen het ontwerp en de inrichting af op jouw onderneming.'},
    {q:'Hoe verloopt een project?',keys:['proces','werkwijze','verloopt','stappen'],a:'We beginnen met een kennismaking en bespreken jouw doelen en de omvang van je project. Daarna stemmen we ontwerp, inhoud en uitvoering af. Je kunt de werkwijze ook bekijken in Sofia’s video op de homepage.'},
    {q:'Wat kost een website?',keys:['website','site','prijzen','prijs','kost','pakket'],a:'Elarae Start begint vanaf €99 voor een eerste digitale basis. Voor een uitgebreidere website, branding of webshop bespreken we de omvang en ontvang je een voorstel op maat. De actuele diensten vind je op de homepage; dit gesprek is geen offerte.'},
-   {q:'Krijgt mijn bedrijf een eigen merkambassadeur?',keys:['sofia','virtueel','medewerker','ambassadeur','white-label','naam','stem','persoonlijkheid'],a:'Ja. Voor jouw bedrijf ontwikkelen we een eigen, volledig white-label virtuele merkambassadeur. Naam, uiterlijk, stem, persoonlijkheid, tone of voice en kennis sluiten aan bij jouw merkidentiteit. Sofia is alleen het demonstratievoorbeeld van Elarae Studio. De dienstverlening en eventuele systeemkoppelingen stemmen we vooraf af.'},
+   {q:'Krijgt mijn bedrijf een eigen merkambassadeur?',keys:['sofia','virtueel','medewerker','ambassadeur','white-label','naam','stem','persoonlijkheid'],a:'Ja. Voor jouw bedrijf ontwikkelen we een eigen, volledig white-label virtuele merkambassadeur. Naam, uiterlijk, stem, persoonlijkheid, tone of voice en kennis sluiten aan bij jouw merkidentiteit. Sofia is de demo-ambassadeur van Elarae Studio. De dienstverlening en de aansluiting op jouw onderneming stemmen we vooraf af.'},
    {q:'Ik zoek een webshop',keys:['webshop','winkel','shop','ecommerce'],a:'Elarae Shop is onze dienst voor een webshop op Shopify of Wix. We bespreken je collectie, categorieën, productpagina’s en de inrichting die daarbij past. De prijs is op aanvraag.'},
    {q:'Ik zoek branding',keys:['branding','logo','huisstijl'],a:'Elarae Branding omvat logo-ontwerp, een kleurpalet, typografie en huisstijltoepassingen. We stemmen de invulling af op jouw merk. De prijs is op aanvraag.'},
    {q:'Hoe neem ik contact op?',keys:['contact','mail','offerte','bellen','telefoon','whatsapp'],a:'Contact verloopt via e-mail, WhatsApp of het contactformulier. Mail naar {email} of stuur een bericht via de WhatsApp-knop op de homepage.',link:{href:'index.html#contact',label:'Naar het contactformulier ↗'}}
@@ -34,7 +34,7 @@ window.SOFIA_CONTENT = Object.freeze({
   reception:{name:'Ontvangst',note:'Toont hoe jouw digitale medewerker bezoekers kan ontvangen en verder begeleiden.'},
   service:{name:'Klantenservice',note:'Toont klantenservice op basis van vooraf afgestemde kennis van jouw onderneming.'},
   sales:{name:'Advies',note:'Toont hoe jouw merkambassadeur klanten kan begeleiden bij het verkennen van het aanbod.'},
-  intake:{name:'Projectintake',note:'Toont leadkwalificatie in vijf stappen. Je verstuurt pas iets via het contactformulier.'}
+  intake:{name:'Projectintake',note:'Brengt je wensen in vijf stappen in kaart, als voorbereiding op een persoonlijke kennismaking.'}
  },
  intake:[
   {q:'Waar ben je naar op zoek?',options:['Branding','Website','Webshop','Virtuele merkambassadeur']},

@@ -13,7 +13,7 @@
  function ready(){form.querySelector('button').disabled=false;input.disabled=false;find('#sf-status').textContent='Merkervaring · voorbeeld';log.setAttribute('aria-busy','false');}
  function respond(text,after,link){
   const token=++generation;clearTimeout(timer);chips.replaceChildren();form.querySelector('button').disabled=true;
-  log.setAttribute('aria-busy','true');find('#sf-status').textContent='Antwoord wordt klaargezet';
+  log.setAttribute('aria-busy','true');find('#sf-status').textContent='Sofia bereidt je antwoord voor';
   timer=setTimeout(()=>{if(token!==generation)return;const el=message(text);if(link){const a=element('a','sf-link',link.label,el);a.href=link.href;}ready();after?.();},180);
  }
  function menu(){choices(content.brands[brand].questions.map(q=>q.q),ask);}
@@ -37,7 +37,7 @@
   }
   let match=questions.find(q=>normal(q.q)===s);
   if(!match){let score=0;questions.forEach(q=>{const n=q.keys.reduce((sum,k)=>sum+(new RegExp('(^|[^a-z])'+normal(k)+'[a-z]*').test(s)?(['kost','prijs','prijzen','welke','pakket','doen'].includes(k)?.1:Math.min(k.length,8)):0),0);if(n>score){score=n;match=q;}});}
-  respond(match?match.a:'Daarover staat nog geen afgestemd antwoord in dit voorbeeld. Kies een onderwerp hieronder of bespreek je vraag rechtstreeks met Elarae Studio.',menu,match?.link);
+  respond(match?match.a:'Die vraag vraagt om persoonlijke aandacht. Kies een onderwerp hieronder of bespreek je vraag rechtstreeks met Elarae Studio.',menu,match?.link);
  }
  function reset(){
   clearTimeout(timer);generation++;step=0;answers=[];log.replaceChildren();chips.replaceChildren();input.value='';ready();form.hidden=role==='intake';
@@ -46,7 +46,7 @@
   root.querySelectorAll('[data-brand]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.brand===brand)));
   root.querySelectorAll('[data-role]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.role===role)));
   if(role==='intake'){respond(brand==='elarae'?'Ik ben Sofia en toon hoe jouw eigen merkambassadeur een aanvraag kan voorbereiden. Je keuzes blijven in dit gesprek; er wordt niets automatisch verzonden.':'Sofia toont hier een mogelijke merkervaring voor '+content.brands[brand].name+'. Je vraagt hier niets aan bij dit conceptmerk. Aan het eind kun je met Elarae Studio bespreken hoe zo’n ervaring bij jouw bedrijf past.',question);}
-  else {const intros={reception:'Ik ben Sofia. In deze demonstratie laat ik zien hoe een eigen digitale medewerker bezoekers van '+content.brands[brand].name+' kan ontvangen. Waar wil je meer over weten?',service:'Ik ben Sofia. Dit voorbeeld toont hoe jouw eigen merkambassadeur vragen over '+content.brands[brand].name+' kan beantwoorden vanuit afgestemde bedrijfskennis.',sales:'Ik ben Sofia. In deze demonstratie laat ik zien hoe een eigen merkambassadeur klanten kan begeleiden bij het aanbod van '+content.brands[brand].name+'. Wat wil je ontdekken?'};respond(intros[role]||content.brands[brand].intro,menu);}
+  else {const intros={reception:'Ik ben Sofia. In deze merkervaring laat ik zien hoe een eigen digitale medewerker bezoekers van '+content.brands[brand].name+' kan ontvangen. Waar wil je meer over weten?',service:'Ik ben Sofia. Dit voorbeeld toont hoe jouw eigen merkambassadeur vragen over '+content.brands[brand].name+' kan beantwoorden vanuit afgestemde bedrijfskennis.',sales:'Ik ben Sofia. In deze merkervaring laat ik zien hoe een eigen merkambassadeur klanten kan begeleiden bij het aanbod van '+content.brands[brand].name+'. Wat wil je ontdekken?'};respond(intros[role]||content.brands[brand].intro,menu);}
  }
  root.querySelectorAll('[data-brand]').forEach(b=>b.addEventListener('click',()=>{brand=b.dataset.brand;reset();}));
  root.querySelectorAll('[data-role]').forEach(b=>b.addEventListener('click',()=>{role=b.dataset.role;reset();}));
