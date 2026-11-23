@@ -9,14 +9,19 @@
  const intake=()=>content.brandIntakes[brand]||content.intake;
  function element(tag,cls,text,parent){const el=document.createElement(tag);if(cls)el.className=cls;if(text)el.textContent=text;if(parent)parent.append(el);return el;}
  function message(text,user=false){const el=element('div','sf-message'+(user?' sf-user':''),contactText(text),log);log.scrollTop=log.scrollHeight;return el;}
- function choices(labels,callback){chips.replaceChildren();labels.forEach((label,i)=>{const b=element('button','',label,chips);b.type='button';b.addEventListener('click',e=>{focusChoices=e.detail===0;callback(label,i);});});if(focusChoices){chips.querySelector('button')?.focus({preventScroll:true});focusChoices=false;}}
+ function choices(labels,callback,compact=false){
+  chips.replaceChildren();chips.classList.remove('is-expanded');chips.dataset.menu=String(compact);
+  labels.forEach((label,i)=>{const b=element('button',compact&&i>=3?'sf-secondary-question':'',label,chips);b.type='button';b.addEventListener('click',e=>{focusChoices=e.detail===0;callback(label,i);});});
+  if(compact&&labels.length>3){const more=element('button','sf-more-questions','Meer onderwerpen',chips);more.type='button';more.setAttribute('aria-expanded','false');more.addEventListener('click',e=>{const expanded=chips.classList.toggle('is-expanded');more.setAttribute('aria-expanded',String(expanded));more.textContent=expanded?'Minder onderwerpen':'Meer onderwerpen';if(expanded&&e.detail===0)chips.querySelector('.sf-secondary-question')?.focus({preventScroll:true});});}
+  if(focusChoices){chips.querySelector('button')?.focus({preventScroll:true});focusChoices=false;}
+ }
  function ready(){form.querySelector('button').disabled=false;input.disabled=false;find('#sf-status').textContent='Merkervaring · voorbeeld';log.setAttribute('aria-busy','false');}
  function respond(text,after,link){
   const token=++generation;clearTimeout(timer);chips.replaceChildren();form.querySelector('button').disabled=true;
   log.setAttribute('aria-busy','true');find('#sf-status').textContent='Sofia bereidt je antwoord voor';
   timer=setTimeout(()=>{if(token!==generation)return;const el=message(text);if(link){const a=element('a','sf-link',link.label,el);a.href=link.href;}ready();after?.();if(matchMedia('(max-width:650px)').matches)log.scrollTop=log.scrollHeight;},180);
  }
- function menu(){choices(content.brands[brand].questions.map(q=>q.q),ask);}
+ function menu(){choices(content.brands[brand].questions.map(q=>q.q),ask,true);}
  function question(){const list=intake(),q=list[step];respond(`Vraag ${step+1} van ${list.length}: ${q.q}`,()=>choices(q.options,answer));}
  function answer(text){message(text,true);answers.push(text);step++;step<intake().length?question():summary();}
  function summary(){
@@ -24,7 +29,7 @@
   const labels=intake().map(q=>q.q.replace(/\?$/,'')),dl=element('dl','',null,el);
   answers.forEach((v,i)=>{element('dt','',labels[i],dl);element('dd','',v,dl);});
   element('p','','Dit overzicht is nog niet verstuurd. Neem het mee naar Elarae Studio en voeg daar je contactgegevens toe.',el);
-  const cta=element('a','sf-button','Neem mee naar je aanvraag ↗',el);
+  const cta=element('a','sf-button','Neem mee naar je aanvraag ↗︎',el);
   const brief='Mijn vraag via Sofia'+(brand!=='elarae'?' (geïnspireerd door '+content.brands[brand].name+')':'')+'\n'+answers.map((v,i)=>labels[i]+': '+v).join('\n');
   cta.href='index.html?sofia='+encodeURIComponent(brief)+'&interesse='+encodeURIComponent(brand==='elarae'?answers[0]:'sofia')+'#contact';
   choices(['Opnieuw beginnen'],()=>reset());step=intake().length;log.scrollTop=log.scrollHeight;
@@ -33,7 +38,7 @@
   if(role==='intake'&&step<intake().length){answer(text);return;}
   message(text,true);const s=normal(text),questions=content.brands[brand].questions;
   if(brand!=='elarae'&&/(contact|telefoon|bellen|mail|whatsapp)/.test(s)){
-   respond('Dit merk is een portfolio-concept. Voor een vergelijkbare website of digitale merkambassadeur kun je Elarae Studio bereiken via {email}, WhatsApp of het contactformulier.',menu,{href:'index.html#contact',label:'Neem contact op met Elarae Studio ↗'});return;
+   respond('Dit merk is een portfolio-concept. Voor een vergelijkbare website of digitale merkambassadeur kun je Elarae Studio bereiken via {email}, WhatsApp of het contactformulier.',menu,{href:'index.html#contact',label:'Neem contact op met Elarae Studio ↗︎'});return;
   }
   let match=questions.find(q=>normal(q.q)===s);
   if(!match){let score=0;questions.forEach(q=>{const n=q.keys.reduce((sum,k)=>sum+(new RegExp('(^|[^a-z])'+normal(k)+'[a-z]*').test(s)?(['kost','prijs','prijzen','welke','pakket','doen'].includes(k)?.1:Math.min(k.length,8)):0),0);if(n>score){score=n;match=q;}});}
