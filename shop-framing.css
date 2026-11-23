@@ -1,0 +1,5 @@
+.featured-hero .panel.fashion{background:#e7d8c7}
+.featured-hero .panel.fashion:before{content:'';position:absolute;inset:0;background-image:var(--model-backdrop,url('assets/hero-exhibition/aaliyah-nude-beige.webp'));background-size:cover;background-position:center 20%;filter:blur(22px)}
+.featured-hero .fashion>#model-image{position:absolute;top:-3%;left:10%;width:80%;height:115%;object-fit:cover;object-position:center top;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+@media(min-width:701px) and (max-width:1000px){.featured-hero .fashion>#model-image{top:auto;bottom:64px;left:0;width:100%;height:auto;object-fit:contain}}
+@media(max-width:700px){.featured-hero .fashion>#model-image{top:0;height:100%}}
