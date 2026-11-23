@@ -68,7 +68,7 @@
 .sf-sector-showcase .sf-sector{position:relative;display:block;padding:0;isolation:isolate}
 .sf-sector-world-frame{position:absolute;inset:0 42% 0 0;overflow:hidden;background:#bca993;z-index:-1}
 .sf-sector-world-frame:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#19130d88,transparent 43%,#19130d55)}
-.sf-sector-world{position:absolute;top:0;height:100%;width:700%;max-width:none;object-fit:cover;object-position:center;display:block;animation:sf-world-arrive 1.3s cubic-bezier(.22,1,.36,1) both}
+.sf-sector-world{position:absolute;top:0;left:0;height:100%;width:100%;max-width:none;object-fit:cover;object-position:center;display:block;animation:sf-world-arrive 1.3s cubic-bezier(.22,1,.36,1) both}
 .sf-sector-showcase .sf-sector .eyebrow{position:absolute;top:30px;left:30px;color:#fff8ed;font-size:9px;letter-spacing:.15em}
 .sf-sector-showcase .sf-sector h3{position:absolute;top:56px;left:29px;width:51%;font-size:clamp(29px,3.15vw,46px);line-height:1.14;color:#fff8ed;margin:0;letter-spacing:-.035em;text-shadow:0 2px 18px #21170f25;overflow-wrap:anywhere}
 .sf-sector-showcase .sf-sector p.sf-sector-outcome{position:absolute;top:34px;left:calc(58% + 26px);width:calc(42% - 52px);padding:0;margin:0;font-family:'Playfair Display',Georgia,serif;font-size:clamp(23px,2.2vw,31px);line-height:1.25;color:#493b32;display:block;letter-spacing:-.035em}

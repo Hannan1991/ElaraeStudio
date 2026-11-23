@@ -21,11 +21,12 @@
  const next=document.createElement('button');next.type='button';next.className='sf-sector-next';next.setAttribute('aria-label','Volgend sectorvoorbeeld');next.textContent='→';controls.append(previous,progress,next);presentation.append(controls);
  const live=document.createElement('span');live.className='sr-only';live.setAttribute('role','status');live.setAttribute('aria-live','polite');presentation.append(live);
  let active=0,hoverTimer=null,ticket=0,start=null,frame=null,animations=[];
+ const sectorImages=['01-schoonheidssalon','02-kapsalon','03-restaurant','04-coach','05-aannemer','06-jurist','07-webshop'];
  const buttons=panels.map((panel,i)=>{
   const title=panel.querySelector('h3').textContent;
   panel.id='sf-sector-example-'+i;panel.hidden=i!==0;panel.classList.toggle('is-active',i===0);
   const speaker=document.createElement('div');speaker.className='sf-sector-speaker';speaker.textContent='Digitale merkambassadeur';panel.querySelector('.sf-sector-answer').before(speaker);
-  const media=document.createElement('div');media.className='sf-sector-world-frame';const image=document.createElement('img');image.className='sf-sector-world';image.src='sofia-worlds.png';image.alt='';image.width=2172;image.height=724;image.loading='lazy';image.decoding='async';image.style.left=(-i*100)+'%';media.append(image);panel.prepend(media);
+  const media=document.createElement('div');media.className='sf-sector-world-frame';const image=document.createElement('img');image.className='sf-sector-world';image.src='assets/sofia/sectorbeelden/'+sectorImages[i]+'.webp';image.alt='';image.width=1254;image.height=1254;image.loading='lazy';image.decoding='async';media.append(image);panel.prepend(media);
   const dialogue=document.createElement('div');dialogue.className='sf-sector-dialogue';dialogue.append(panel.querySelector('.sf-sector-question'),speaker,panel.querySelector('.sf-sector-answer'));panel.append(dialogue);
   const caption=document.createElement('span');caption.className='sf-sector-concept-label';caption.textContent='Een mogelijke merkwereld';panel.append(caption);
   const promise=document.createElement('p');promise.className='sf-sector-promise';promise.textContent=['De eerste indruk. Al persoonlijk.','De juiste keuze. Al vóór de spiegel.','Gastvrijheid. Nog voor het eerste bezoek.','Begeleiding. Vanaf het eerste contact.','Vakmanschap. Duidelijk uitgelegd.','Vertrouwen. Vanaf het eerste contact.','Persoonlijk advies. De juiste keuze.'][i];panel.append(promise);
