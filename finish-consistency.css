@@ -1,0 +1,6 @@
+/* Final editorial consistency across desktop, tablet and mobile. */
+h1 em,h2 em,h3 em,h4 em,h5 em,h6 em,h1 i,h2 i,h3 i,h4 i,h5 i,h6 i{font-style:normal!important}
+.sf-message-linked{white-space:normal}
+.sf-message-linked .sf-message-copy{white-space:pre-line;margin:0}
+.sf-message-action{margin-top:10px}
+.sf-message-action>.sf-link{display:flex;width:fit-content;max-width:100%;min-height:44px;white-space:normal;margin:0}

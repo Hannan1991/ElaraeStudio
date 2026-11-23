@@ -21,7 +21,7 @@
  function respond(text,after,link){
   const token=++generation;clearTimeout(timer);chips.replaceChildren();form.querySelector('button').disabled=true;
   log.setAttribute('aria-busy','true');find('#sf-status').textContent='Sofia bereidt je antwoord voor';
-  timer=setTimeout(()=>{if(token!==generation)return;const el=message(text);if(link){const a=element('a','sf-link',link.label,el);a.href=link.href;}ready();after?.();if(matchMedia('(max-width:650px)').matches)log.scrollTop=log.scrollHeight;},180);
+  timer=setTimeout(()=>{if(token!==generation)return;const el=message(text);if(link){el.classList.add('sf-message-linked');const copy=element('p','sf-message-copy',el.textContent);el.replaceChildren(copy,document.createTextNode('\n\n'));const action=element('div','sf-message-action',null,el);const a=element('a','sf-link',link.label,action);a.href=link.href;}ready();after?.();if(matchMedia('(max-width:650px)').matches)log.scrollTop=log.scrollHeight;},180);
  }
  function menu(){choices(content.brands[brand].questions.map(q=>q.q),ask,true);}
  function question(){const list=intake(),q=list[step];respond(`Vraag ${step+1} van ${list.length}: ${q.q}`,()=>choices(q.options,answer));}
