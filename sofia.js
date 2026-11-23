@@ -33,7 +33,7 @@
   if(role==='intake'&&step<intake().length){answer(text);return;}
   message(text,true);const s=normal(text),questions=content.brands[brand].questions;
   if(brand!=='elarae'&&/(contact|telefoon|bellen|mail|whatsapp)/.test(s)){
-   respond('Dit merk is een portfolio-concept. Voor een vergelijkbare website of virtuele merkambassadeur kun je Elarae Studio bereiken via {email}, WhatsApp of het contactformulier.',menu,{href:'index.html#contact',label:'Neem contact op met Elarae Studio ↗'});return;
+   respond('Dit merk is een portfolio-concept. Voor een vergelijkbare website of digitale merkambassadeur kun je Elarae Studio bereiken via {email}, WhatsApp of het contactformulier.',menu,{href:'index.html#contact',label:'Neem contact op met Elarae Studio ↗'});return;
   }
   let match=questions.find(q=>normal(q.q)===s);
   if(!match){let score=0;questions.forEach(q=>{const n=q.keys.reduce((sum,k)=>sum+(new RegExp('(^|[^a-z])'+normal(k)+'[a-z]*').test(s)?(['kost','prijs','prijzen','welke','pakket','doen'].includes(k)?.1:Math.min(k.length,8)):0),0);if(n>score){score=n;match=q;}});}
