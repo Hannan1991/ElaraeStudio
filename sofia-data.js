@@ -1,7 +1,7 @@
 /* Curated local content. No external AI calls or booking integrations. */
 window.SOFIA_CONTENT = Object.freeze({
  brands: {
-  elarae:{name:'Elarae Studio',accent:'#493b32',type:'Branding & digitale ervaringen',intro:'Hallo, ik ben Sofia, de demo-ambassadeur van Elarae Studio. Ik laat zien hoe een eigen virtuele merkambassadeur jouw bezoekers kan ontvangen, informeren en begeleiden.',questions:[
+  elarae:{name:'Elarae Studio',accent:'#493b32',type:'Branding & digitale ervaringen',intro:'Welkom bij Elarae Studio. Ik ben Sofia. Vertel me wat je voor jouw merk voor ogen hebt, of kies een onderwerp dat je wilt verkennen.',questions:[
    {q:'Waarmee helpen jullie?',keys:['diensten','aanbod','doen'],a:'Elarae Studio brengt branding, websites, webshops en content samen in één herkenbare merkwereld. We stemmen het ontwerp en de inrichting af op jouw onderneming.'},
    {q:'Hoe verloopt een project?',keys:['proces','werkwijze','verloopt','stappen'],a:'We beginnen met een kennismaking en bespreken jouw doelen en de omvang van je project. Daarna stemmen we ontwerp, inhoud en uitvoering af. Je kunt de werkwijze ook bekijken in Sofia’s video op de homepage.'},
    {q:'Wat kost een website?',keys:['website','site','prijzen','prijs','kost','pakket'],a:'Elarae Start begint vanaf €99 voor een eerste digitale basis. Voor een uitgebreidere website, branding of webshop bespreken we de omvang en ontvang je een voorstel op maat. De actuele diensten vind je op de homepage; dit gesprek is geen offerte.'},
@@ -10,19 +10,19 @@ window.SOFIA_CONTENT = Object.freeze({
    {q:'Ik zoek branding',keys:['branding','logo','huisstijl'],a:'Elarae Branding omvat logo-ontwerp, een kleurpalet, typografie en huisstijltoepassingen. We stemmen de invulling af op jouw merk. De prijs is op aanvraag.'},
    {q:'Hoe neem ik contact op?',keys:['contact','mail','offerte','bellen','telefoon','whatsapp'],a:'Contact verloopt via e-mail, WhatsApp of het contactformulier. Mail naar {email} of stuur een bericht via de WhatsApp-knop op de homepage.',link:{href:'index.html#contact',label:'Naar het contactformulier ↗'}}
   ]},
-  gloss:{name:'Elyra Gloss',accent:'#602d3c',type:'Beauty · portfolio-concept',intro:'Ik ben Sofia, de demo-ambassadeur van Elarae Studio. In deze merkwereld toon ik hoe een eigen virtuele merkambassadeur bezoekers door een beautycollectie kan begeleiden.',questions:[
+  gloss:{name:'Elyra Gloss',accent:'#602d3c',type:'Beauty · portfolio-concept',intro:'Welkom in de wereld van Elyra Gloss. Zoek je een zachte tint of juist een warme glans? Ik help je de collectie te ontdekken.',questions:[
    {q:'Welke tinten zijn er?',keys:['tint','kleur','welke'],a:'In dit portfolio-concept zie je Nude Bloom, Golden Veil en Rose Silk. Je kunt de drie tinten vergelijken in de Elyra Gloss-case study.'},
    {q:'Welke tint past bij mij?',keys:['past','advies','kiezen'],a:'Voor een zachte, natuurlijke uitstraling kun je Nude Bloom verkennen. Golden Veil laat een warmere glans zien; Rose Silk een roze tint. Dit is voorbeeldadvies bij een conceptcollectie.'},
    {q:'Wat kost een gloss?',keys:['kost','prijs','euro'],a:'De conceptcollectie toont €15,95 per gloss en €47,85 voor drie. Dit is een portfolio-ervaring: je kunt hier niet bestellen.'},
    {q:'Bekijk het merkverhaal',keys:['merk','verhaal','case','project'],a:'De Elyra Gloss-case study laat zien hoe productbeweging, merkidentiteit en winkelinteractie één ervaring vormen.',link:{href:'elyra-gloss.html',label:'Ontdek de case study ↗'}}
   ]},
-  shop:{name:'Elyra Shop',accent:'#685140',type:'Fashion · portfolio-concept',intro:'Ik ben Sofia, de demo-ambassadeur van Elarae Studio. Dit fashion-voorbeeld laat zien hoe een eigen virtuele merkambassadeur klanten kan helpen met kleuren en personalisatie.',questions:[
+  shop:{name:'Elyra Shop',accent:'#685140',type:'Fashion · portfolio-concept',intro:'Welkom bij Elyra Shop. Een kleur, een stof, een uitstraling die bij je past. Waar wil je beginnen?',questions:[
    {q:'Hoe werkt personalisatie?',keys:['personalisatie','model','werkt','kiezen'],a:'Op de homepage kun je Nora of Aaliyah kiezen en de hijabkleur veranderen. Modelbeeld, kleurlabel en stofdetail volgen je keuze. Zo kun je de selectie visueel vergelijken.'},
    {q:'Welke kleuren kan ik bekijken?',keys:['kleur','tint','welke'],a:'In de interactieve homepagepresentatie kun je Nude Beige, Mocha Brown en Stone vergelijken. De Elyra Shop-case study toont de bredere winkelervaring.'},
    {q:'Kan ik hier bestellen?',keys:['bestel','kopen','betalen','prijs','kost'],a:'Nee. Elyra Shop is een zelfstandig portfolio-concept. Er worden in deze ervaring geen bestellingen geplaatst of betalingen verwerkt. Getoonde producten en bedragen behoren tot die conceptpresentatie.'},
    {q:'Bekijk de winkelervaring',keys:['winkel','case','project','webshop'],a:'Bekijk hoe beeld, productinformatie en selectie samenkomen in de Elyra Shop-case study.',link:{href:'elyra-shop.html',label:'Ontdek de case study ↗'}}
   ]},
-  aureon:{name:'Aureon Construct',accent:'#30372e',type:'Architectuur · portfolio-concept',intro:'Ik ben Sofia, de demo-ambassadeur van Elarae Studio. In dit voorbeeld voor Aureon Construct toon ik hoe een eigen merkambassadeur bezoekers door diensten en projectverhalen kan begeleiden.',questions:[
+  aureon:{name:'Aureon Construct',accent:'#30372e',type:'Architectuur · portfolio-concept',intro:'Welkom bij Aureon Construct. Van de eerste afwerking tot het karakter van een hele ruimte: ik neem je mee in het werk en de keuzes erachter. Wat wil je ontdekken?',questions:[
    {q:'Welke werkzaamheden zie ik?',keys:['doen','werk','diensten','aanbod'],a:'De case study toont renovatie en afwerking: onder meer pleisterwerk, schilderwerk en vloerplaatsing. De nadruk ligt op uitvoering, materiaal en het uiteindelijke resultaat.'},
    {q:'Kan ik een transformatie zien?',keys:['transformatie','voorbeeld','voor','na'],a:'In de case study kun je dezelfde woonkamer voor en na vergelijken: van een kale wand naar een afgewerkte boognis. De beelden zijn conceptvisualisaties.',link:{href:'aureon-construct.html#ervaring',label:'Bekijk de transformatie ↗'}},
    {q:'Hoe bereid ik een aanvraag voor?',keys:['aanvraag','offerte','prijs','kost','contact','mail','telefoon','bellen'],a:'Bij een renovatieaanvraag zijn de ruimte, gewenste werkzaamheden en planning een goed vertrekpunt. Aureon Construct is hier een portfolio-concept, geen renovatiebedrijf dat opdrachten aanneemt. Wil je een vergelijkbare website of merkambassadeur? Dan kun je Elarae Studio bereiken via e-mail, WhatsApp of het contactformulier.'},
@@ -30,10 +30,10 @@ window.SOFIA_CONTENT = Object.freeze({
   ]}
  },
  roles:{
-  ambassador:{name:'Merkambassadeur',note:'Toont hoe jouw merkambassadeur het merk en het aanbod kan vertegenwoordigen.'},
-  reception:{name:'Ontvangst',note:'Toont hoe jouw digitale medewerker bezoekers kan ontvangen en verder begeleiden.'},
-  service:{name:'Klantenservice',note:'Toont klantenservice op basis van vooraf afgestemde kennis van jouw onderneming.'},
-  sales:{name:'Advies',note:'Toont hoe jouw merkambassadeur klanten kan begeleiden bij het verkennen van het aanbod.'},
+  ambassador:{name:'Merkambassadeur',note:'Een persoonlijk welkom, helemaal in de taal van jouw merk.'},
+  reception:{name:'Ontvangst',note:'Geeft bezoekers een warm welkom en een duidelijke volgende stap.'},
+  service:{name:'Klantenservice',note:'Helpt klanten verder met antwoorden die bij jouw dienstverlening passen.'},
+  sales:{name:'Advies',note:'Helpt bezoekers een keuze te maken die bij hun wensen past.'},
   intake:{name:'Projectintake',note:'Brengt je wensen in vijf stappen in kaart, als voorbereiding op een persoonlijke kennismaking.'}
  },
  intake:[
