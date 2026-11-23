@@ -1,0 +1,14 @@
+/* Curated selection, within the existing editorial portfolio language. */
+#portfolio .portfolio-more{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:54px;padding-top:24px;border-top:1px solid #493b3226}
+#portfolio .portfolio-more>span{font-size:9px;letter-spacing:.13em;color:#897463}
+#portfolio .portfolio-more .text-link{display:inline-flex;align-items:center;gap:24px;min-height:44px;border-bottom:1px solid #a28a73;color:#765f4c;font-size:12px;background:none}
+#portfolio .portfolio-more .text-link span{transition:transform .25s}
+#portfolio .portfolio-more .text-link:hover span{transform:translate(2px,-2px)}
+.portfolio-index #portfolio{padding-top:64px}
+.portfolio-index #portfolio>.section-kicker{top:77px}
+.portfolio-index #portfolio h1{font:400 clamp(43px,5.2vw,70px)/1.08 'Playfair Display',Georgia,serif;letter-spacing:-.04em;margin:16px 0 20px}
+.portfolio-index #portfolio h1 em{font-weight:400;color:#897463}
+.portfolio-index #portfolio>.section-head{margin-bottom:52px}
+.portfolio-index #portfolio .portfolio-intro{max-width:58ch}
+@media(max-width:650px){#portfolio .portfolio-more{align-items:flex-start;flex-direction:column;gap:12px;margin-top:36px;padding-top:20px}.portfolio-index #portfolio{padding-top:36px}.portfolio-index #portfolio h1{font-size:43px}.portfolio-index #portfolio>.section-head{margin-bottom:32px}}
+@media(prefers-reduced-motion:reduce){#portfolio .portfolio-more .text-link span{transition:none}}

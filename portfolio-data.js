@@ -1,161 +1,83 @@
 window.ELARAE_PROJECTS = [
   {
-    "id": "elan",
+    "id": "aureon-construct",
     "number": "01",
-    "name": "Élan Nail Studio",
-    "sector": "Beauty & wellness",
-    "description": "Behandelingen en afspraakmogelijkheden krijgen een duidelijke plek. Dezelfde visuele signatuur verbindt de website met sociale content en drukwerk.",
-    "caseUrl": "elan-nail-studio.html",
-    "tone": "#e9dfd3",
+    "name": "Aureon Construct",
+    "sector": "Website Design · UX/UI · Development · Motion Design",
+    "description": "Werkbeelden tonen de uitvoering; de voor-en-na-vergelijking maakt verandering zichtbaar. Diensten en projectverhalen begeleiden de bezoeker naar een gericht gesprek.",
+    "caseUrl": "aureon-construct.html",
+    "tone": "#deddd3",
     "media": [
       {
+        "type": "video",
+        "src": "assets/cases/aureon/aureon-showcase-45s.mp4",
+        "poster": "assets/cases/aureon/aureon-cover-refined.webp",
+        "caption": "Website Design · UX/UI · Development · Motion Design",
+        "alt": "Aureon Construct — website en showcasefilm door Elarae Studio"
+      },
+      {
         "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Desktop Website.png",
-        "alt": "De volledige website",
-        "caption": "De volledige website",
+        "src": "assets/cases/aureon/home.webp",
+        "alt": "AUREON CONSTRUCT — Een eerste indruk met rust en richting.",
+        "caption": "Een eerste indruk met rust en richting",
         "layout": "single"
       },
       {
         "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Mobiele Website.png",
-        "alt": "De mobiele website",
-        "caption": "De mobiele website",
+        "src": "assets/cases/aureon/work.webp",
+        "alt": "AUREON CONSTRUCT — Het werk wordt zichtbaar tijdens het scrollen.",
+        "caption": "Het werk wordt zichtbaar tijdens het scrollen",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/services.webp",
+        "alt": "AUREON CONSTRUCT — Diensten op één herkenbare manier gepresenteerd.",
+        "caption": "Diensten op één herkenbare manier gepresenteerd",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/beforeafter.webp",
+        "alt": "AUREON CONSTRUCT — Dezelfde ruimte, een zichtbaar verschil.",
+        "caption": "Dezelfde ruimte, een zichtbaar verschil",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/process.webp",
+        "alt": "AUREON CONSTRUCT — Een heldere route van kennismaking naar afwerking.",
+        "caption": "Een heldere route van kennismaking naar afwerking",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/detail.webp",
+        "alt": "AUREON CONSTRUCT — Van de opbouw tot de afgewerkte wand.",
+        "caption": "Van de opbouw tot de afgewerkte wand",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/aureon/mobile-home.webp",
+        "alt": "AUREON CONSTRUCT — De mobiele homepage.",
+        "caption": "De mobiele homepage",
         "layout": "pair",
-        "pair": "assets/Portfolio/Élan Nail Studio/Mockups/Instagrampagina.png"
+        "pair": "assets/cases/aureon/mobile-service-cormorant.webp"
       },
       {
         "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Instagrampagina.png",
-        "alt": "Instagram in de merksignatuur",
-        "caption": "Instagram in de merksignatuur",
+        "src": "assets/cases/aureon/mobile-service-cormorant.webp",
+        "alt": "AUREON CONSTRUCT — De mobiele dienstenervaring.",
+        "caption": "De mobiele dienstenervaring",
         "layout": "pair",
-        "pair": "assets/Portfolio/Élan Nail Studio/Mockups/Mobiele Website.png"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Afsprakenkaart.png",
-        "alt": "De afsprakenkaart",
-        "caption": "De afsprakenkaart",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Cadeaubon.png",
-        "alt": "De cadeaubon",
-        "caption": "De cadeaubon",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Visitekaart.png",
-        "alt": "Het visitekaartje",
-        "caption": "Het visitekaartje",
-        "layout": "single"
-      }
-    ]
-  },
-  {
-    "id": "urban",
-    "number": "02",
-    "name": "Urban Bites",
-    "sector": "Food & hospitality",
-    "description": "Een scanbaar menu brengt het aanbod snel in beeld. Productfotografie en duidelijke categorieën ondersteunen de keuze.",
-    "caseUrl": "urban-bites.html",
-    "tone": "#e5dfd2",
-    "media": [
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Urban Bites/Mockups/Website Desktop.png",
-        "alt": "De desktopwebsite",
-        "caption": "De desktopwebsite",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Urban Bites/Mockups/Website Mobiel.png",
-        "alt": "De mobiele website",
-        "caption": "De mobiele website",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Urban Bites/Mockups/Instagram Feed.png",
-        "alt": "De Instagram feed",
-        "caption": "De Instagram feed",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Urban Bites/Mockups/Digitaal menu met QR-code.png",
-        "alt": "Het digitale menu",
-        "caption": "Het digitale menu",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Urban Bites/Mockups/Take-away verpakking met branding.png",
-        "alt": "Take-away met branding",
-        "caption": "Take-away met branding",
-        "layout": "single"
-      }
-    ]
-  },
-  {
-    "id": "lumora",
-    "number": "03",
-    "name": "Lumora Coaching",
-    "sector": "Coaching & wellbeing",
-    "description": "Aanbod, begeleiding en kennismaking volgen een heldere volgorde. Een rustige vormgeving geeft de inhoud ruimte en maakt de volgende stap herkenbaar.",
-    "caseUrl": "lumora-coaching.html",
-    "tone": "#dedbd2",
-    "media": [
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/desktopwebsite.png",
-        "alt": "De desktopwebsite",
-        "caption": "De desktopwebsite",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/mobiele website met afspraakformulier.png",
-        "alt": "De mobiele website",
-        "caption": "De mobiele website",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/Instagram Feed.png",
-        "alt": "De Instagram feed",
-        "caption": "De Instagram feed",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/E-Book.png",
-        "alt": "Het e-book",
-        "caption": "Het e-book",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/Werkboek.png",
-        "alt": "Het werkboek",
-        "caption": "Het werkboek",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/Portfolio/Lumora Coaching/Mockups/Visitekaartje.png",
-        "alt": "Het visitekaartje",
-        "caption": "Het visitekaartje",
-        "layout": "single"
+        "pair": "assets/cases/aureon/mobile-home.webp"
       }
     ]
   },
   {
     "id": "elyra-gloss",
-    "number": "04",
+    "number": "02",
     "name": "ELYRA GLOSS",
     "sector": "Beauty & 3D webdesign",
     "description": "Bewegende producten trekken de aandacht; informatie en winkelacties blijven binnen dezelfde ervaring. Zo versterken merkpresentatie en bediening elkaar.",
@@ -217,7 +139,7 @@ window.ELARAE_PROJECTS = [
   },
   {
     "id": "elyra-shop",
-    "number": "05",
+    "number": "03",
     "name": "Elyra Shop",
     "sector": "E-commerce & UX",
     "description": "Model- en kleurkeuze blijven verbonden met beeld en productinformatie. Bezoekers herkennen hun selectie tijdens het vergelijken en verdiepen.",
@@ -292,78 +214,156 @@ window.ELARAE_PROJECTS = [
     ]
   },
   {
-    "id": "aureon-construct",
-    "number": "06",
-    "name": "Aureon Construct",
-    "sector": "Website Design · UX/UI · Development · Motion Design",
-    "description": "Werkbeelden tonen de uitvoering; de voor-en-na-vergelijking maakt verandering zichtbaar. Diensten en projectverhalen begeleiden de bezoeker naar een gericht gesprek.",
-    "caseUrl": "aureon-construct.html",
-    "tone": "#deddd3",
+    "id": "elan",
+    "number": "04",
+    "name": "Élan Nail Studio",
+    "sector": "Beauty & wellness",
+    "description": "Behandelingen en afspraakmogelijkheden krijgen een duidelijke plek. Dezelfde visuele signatuur verbindt de website met sociale content en drukwerk.",
+    "caseUrl": "elan-nail-studio.html",
+    "tone": "#e9dfd3",
     "media": [
       {
-        "type": "video",
-        "src": "assets/cases/aureon/aureon-showcase-45s.mp4",
-        "poster": "assets/cases/aureon/aureon-cover-refined.webp",
-        "caption": "Website Design · UX/UI · Development · Motion Design",
-        "alt": "Aureon Construct — website en showcasefilm door Elarae Studio"
-      },
-      {
         "type": "image",
-        "src": "assets/cases/aureon/home.webp",
-        "alt": "AUREON CONSTRUCT — Een eerste indruk met rust en richting.",
-        "caption": "Een eerste indruk met rust en richting",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Desktop Website.png",
+        "alt": "De volledige website",
+        "caption": "De volledige website",
         "layout": "single"
       },
       {
         "type": "image",
-        "src": "assets/cases/aureon/work.webp",
-        "alt": "AUREON CONSTRUCT — Het werk wordt zichtbaar tijdens het scrollen.",
-        "caption": "Het werk wordt zichtbaar tijdens het scrollen",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/cases/aureon/services.webp",
-        "alt": "AUREON CONSTRUCT — Diensten op één herkenbare manier gepresenteerd.",
-        "caption": "Diensten op één herkenbare manier gepresenteerd",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/cases/aureon/beforeafter.webp",
-        "alt": "AUREON CONSTRUCT — Dezelfde ruimte, een zichtbaar verschil.",
-        "caption": "Dezelfde ruimte, een zichtbaar verschil",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/cases/aureon/process.webp",
-        "alt": "AUREON CONSTRUCT — Een heldere route van kennismaking naar afwerking.",
-        "caption": "Een heldere route van kennismaking naar afwerking",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/cases/aureon/detail.webp",
-        "alt": "AUREON CONSTRUCT — Van de opbouw tot de afgewerkte wand.",
-        "caption": "Van de opbouw tot de afgewerkte wand",
-        "layout": "single"
-      },
-      {
-        "type": "image",
-        "src": "assets/cases/aureon/mobile-home.webp",
-        "alt": "AUREON CONSTRUCT — De mobiele homepage.",
-        "caption": "De mobiele homepage",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Mobiele Website.png",
+        "alt": "De mobiele website",
+        "caption": "De mobiele website",
         "layout": "pair",
-        "pair": "assets/cases/aureon/mobile-service-cormorant.webp"
+        "pair": "assets/Portfolio/Élan Nail Studio/Mockups/Instagrampagina.png"
       },
       {
         "type": "image",
-        "src": "assets/cases/aureon/mobile-service-cormorant.webp",
-        "alt": "AUREON CONSTRUCT — De mobiele dienstenervaring.",
-        "caption": "De mobiele dienstenervaring",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Instagrampagina.png",
+        "alt": "Instagram in de merksignatuur",
+        "caption": "Instagram in de merksignatuur",
         "layout": "pair",
-        "pair": "assets/cases/aureon/mobile-home.webp"
+        "pair": "assets/Portfolio/Élan Nail Studio/Mockups/Mobiele Website.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Afsprakenkaart.png",
+        "alt": "De afsprakenkaart",
+        "caption": "De afsprakenkaart",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Cadeaubon.png",
+        "alt": "De cadeaubon",
+        "caption": "De cadeaubon",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Élan Nail Studio/Mockups/Visitekaart.png",
+        "alt": "Het visitekaartje",
+        "caption": "Het visitekaartje",
+        "layout": "single"
+      }
+    ]
+  },
+  {
+    "id": "urban",
+    "number": "05",
+    "name": "Urban Bites",
+    "sector": "Food & hospitality",
+    "description": "Een scanbaar menu brengt het aanbod snel in beeld. Productfotografie en duidelijke categorieën ondersteunen de keuze.",
+    "caseUrl": "urban-bites.html",
+    "tone": "#e5dfd2",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Urban Bites/Mockups/Website Desktop.png",
+        "alt": "De desktopwebsite",
+        "caption": "De desktopwebsite",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Urban Bites/Mockups/Website Mobiel.png",
+        "alt": "De mobiele website",
+        "caption": "De mobiele website",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Urban Bites/Mockups/Instagram Feed.png",
+        "alt": "De Instagram feed",
+        "caption": "De Instagram feed",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Urban Bites/Mockups/Digitaal menu met QR-code.png",
+        "alt": "Het digitale menu",
+        "caption": "Het digitale menu",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Urban Bites/Mockups/Take-away verpakking met branding.png",
+        "alt": "Take-away met branding",
+        "caption": "Take-away met branding",
+        "layout": "single"
+      }
+    ]
+  },
+  {
+    "id": "lumora",
+    "number": "06",
+    "name": "Lumora Coaching",
+    "sector": "Coaching & wellbeing",
+    "description": "Aanbod, begeleiding en kennismaking volgen een heldere volgorde. Een rustige vormgeving geeft de inhoud ruimte en maakt de volgende stap herkenbaar.",
+    "caseUrl": "lumora-coaching.html",
+    "tone": "#dedbd2",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/desktopwebsite.png",
+        "alt": "De desktopwebsite",
+        "caption": "De desktopwebsite",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/mobiele website met afspraakformulier.png",
+        "alt": "De mobiele website",
+        "caption": "De mobiele website",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/Instagram Feed.png",
+        "alt": "De Instagram feed",
+        "caption": "De Instagram feed",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/E-Book.png",
+        "alt": "Het e-book",
+        "caption": "Het e-book",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/Werkboek.png",
+        "alt": "Het werkboek",
+        "caption": "Het werkboek",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/Portfolio/Lumora Coaching/Mockups/Visitekaartje.png",
+        "alt": "Het visitekaartje",
+        "caption": "Het visitekaartje",
+        "layout": "single"
       }
     ]
   }

@@ -74,7 +74,9 @@
  }
  // Future projects added to the data file receive the same component automatically.
  const listing=document.querySelector('#portfolio .project-list');
+ const selection=listing?.dataset.projects?.split(',').filter(Boolean);
  if(listing)projects.forEach(project=>{
+  if(selection&&!selection.includes(project.id))return;
   if(!Array.isArray(project.media)||!project.media.length||[...listing.children].some(c=>c.dataset.project===project.id))return;
   const root=document.createElement('article');root.className='portfolio-project';root.id=project.id;root.dataset.project=project.id;root.style.setProperty('--project-tone',project.tone || '#e9ded4');
   root.innerHTML='<div class="pf-surface" role="group" aria-roledescription="galerij"><div class="pf-media"></div><button class="pf-arrow pf-prev" type="button">←</button><button class="pf-arrow pf-next" type="button">→</button><a class="pf-expand" target="_blank" rel="noopener" aria-haspopup="dialog">+</a></div><div class="pf-info"><div class="pf-meta"><span></span><span class="pf-position" aria-hidden="true"></span></div><h3></h3><p class="pf-counts"></p><p class="pf-description"></p><a class="pf-case-link">Ontdek de case study <span aria-hidden="true">↗</span></a><p class="pf-status sr-only" role="status" aria-live="polite" aria-atomic="true"></p></div>';
