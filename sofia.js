@@ -2,6 +2,8 @@
  'use strict';
  const content=window.SOFIA_CONTENT,root=document.querySelector('[data-sofia]');
  if(!content||!root)return;
+ const privacyNote=document.querySelector('.sf-privacy-note'),privacyMobile=matchMedia('(max-width:650px)');
+ function privacyLayout(){if(privacyNote)privacyNote.open=!privacyMobile.matches;}privacyLayout();privacyMobile.addEventListener('change',privacyLayout);
  const find=s=>root.querySelector(s),log=find('#sf-log'),chips=find('#sf-chips'),input=find('#sf-question'),form=find('#sf-form');
  let brand='elarae',role='ambassador',step=0,answers=[],timer=null,generation=0,focusChoices=false;
  const normal=t=>t.toLocaleLowerCase('nl').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
