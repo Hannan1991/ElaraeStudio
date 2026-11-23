@@ -104,3 +104,19 @@
  .ambassador-page .sf-privacy-note[open]>summary:after{transform:rotate(225deg)}
  .ambassador-page .sf-privacy-note .sf-demo-note{margin:0 0 12px}
 }
+
+/* Stable mobile cards and reachable navigation, confined to this showcase. */
+@media(max-width:650px){
+ .ambassador-page .sf-sector-showcase .sf-sector-grid{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch}
+ .ambassador-page .sf-sector-showcase .sf-sector{grid-area:1/1;align-content:start;padding-bottom:18px}
+ .ambassador-page .sf-sector-showcase .sf-sector[hidden]{display:grid!important;visibility:hidden;pointer-events:none}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-promise{margin-top:18px;margin-bottom:10px}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-outcome{margin-bottom:12px}
+ .ambassador-page .sf-sector-dialogue{padding-top:12px}
+ .ambassador-page .sf-sector-showcase .sf-sector p.sf-sector-question{margin-bottom:12px}
+ .ambassador-page .sf-sector-controls{position:sticky;bottom:calc(env(safe-area-inset-bottom,0px) + 6px);z-index:3;margin-top:4px;padding:5px 0;gap:12px;background:#f6f2eb;border-top:1px solid #493b321a;box-shadow:0 -5px 12px -8px #493b3226}
+ .ambassador-page .sf-sector-controls button{width:48px;height:48px;min-width:48px;min-height:48px;touch-action:manipulation}
+ .ambassador-page .sf-sector-progress{flex-direction:row;gap:0;line-height:1}
+ .ambassador-page .sf-sector-count{display:block;line-height:1;font-size:10px}
+ .ambassador-page .sf-sector-hint{display:none}
+}
