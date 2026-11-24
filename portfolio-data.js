@@ -155,7 +155,7 @@ window.ELARAE_PROJECTS = [
       },
       {
         "type": "image",
-        "src": "assets/cases/shop-campaign-product.webp",
+        "src": "assets/cases/shop-approved-20261123/shop-campaign-product.webp",
         "alt": "De volledige productervaring met campagne, modelkeuze en galerij",
         "caption": "Oriëntatie, vergelijking en actie in één context",
         "layout": "single"
@@ -169,14 +169,14 @@ window.ELARAE_PROJECTS = [
       },
       {
         "type": "image",
-        "src": "assets/cases/shop-stone-case.webp",
+        "src": "assets/cases/shop-approved-20261123/shop-stone-case.webp",
         "alt": "De productpagina met Stone geselecteerd",
         "caption": "Elke weergave bevestigt dezelfde selectie",
         "layout": "single"
       },
       {
         "type": "image",
-        "src": "assets/cases/shop-mocha-brown-case.webp",
+        "src": "assets/cases/shop-approved-20261123/shop-mocha-brown-case.webp",
         "alt": "Dezelfde productpagina in Mocha Brown",
         "caption": "Een andere keuze, dezelfde vertrouwde bediening",
         "layout": "single"
@@ -190,9 +190,23 @@ window.ELARAE_PROJECTS = [
       },
       {
         "type": "image",
-        "src": "assets/cases/shop-detail.webp",
+        "src": "assets/cases/shop-approved-20261123/shop-detail.webp",
         "alt": "Een detail onderzoeken binnen dezelfde context",
         "caption": "Verdiepen zonder de gemaakte keuze te verliezen",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/shop-approved-20261123/model-choice.webp",
+        "alt": "De modelkeuze met Nora en Aaliyah",
+        "caption": "Een persoonlijke keuze, helder in beeld",
+        "layout": "single"
+      },
+      {
+        "type": "image",
+        "src": "assets/cases/shop-approved-20261123/seated.webp",
+        "alt": "Nora en Aaliyah in de Elyra-campagne",
+        "caption": "Twee modellen binnen dezelfde merkwereld",
         "layout": "single"
       },
       {
